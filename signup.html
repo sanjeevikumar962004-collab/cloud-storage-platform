@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account — STACKLY Cloud Storage & Technology Solutions</title>
+    <meta name="description" content="Open your STACKLY cloud storage vault. Start with 5GB free permanent storage or deploy 2TB Pro clusters with Zero-Knowledge encryption.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#7C3AED',
+                        'primary-dark': '#630ED4',
+                        'primary-light': '#F3E8FF',
+                        dark: '#0F1117',
+                        'dark-card': '#161922',
+                        cream: '#FAF9F6',
+                        'cream-alt': '#F4F1EA',
+                        border: '#E2DDD5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .stackly-logo-violet {
+            filter: brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(3475%) hue-rotate(256deg) brightness(98%) contrast(97%);
+        }
+    </style>
+
+<style>
+  
+  @media (max-width: 360px) {
+    .h-20 { height: 4rem !important; }
+    .pt-20 { pt-16 !important; }
+    .pt-28 { pt-20 !important; }
+  }
+</style>
+
+
+<style>
+  html {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    scroll-behavior: smooth;
+    height: auto;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  /* Modern accessible styled scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4B5FD;
+    border-radius: 9999px;
+    border: 2px solid #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+  }
+</style>
+
+</head>
+<body class="font-sans text-[#1E212B] bg-[#FAF9F6] selection:bg-purple-100 selection:text-primary antialiased min-h-screen flex flex-col justify-between overflow-x-hidden">
+
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E7E2D9] shadow-[0_2px_16px_rgba(0,0,0,0.03)]">
+  <div class="h-16 sm:h-20 max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between gap-2 sm:gap-4">
+    <!-- Brand Logo (No text next to logo) -->
+    <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+      <a class="flex items-center group shrink-0" href="index.html" aria-label="STACKLY Home">
+        <img alt="STACKLY Brand Logo" class="h-7 sm:h-8 md:h-9 w-auto object-contain stackly-logo-violet transition-transform group-hover:scale-105" src="stackly logo.webp"/>
+      </a>
+      <div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F4F1EA] border border-[#E2DDD3]">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shadow-[0_0_6px_rgba(124,58,237,0.5)]"></span>
+        <span class="font-mono-data text-mono-data text-[#64748B] text-xs uppercase tracking-wider font-semibold">v2.4 Enterprise Cloud</span>
+      </div>
+    </div>
+    <!-- Desktop Navigation Links (No Admin, No User Portal) -->
+    <nav class="hidden xl:flex items-center gap-1">
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="index.html">Home</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="feautures.html">Features</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="pricing.html">Pricing</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="about.html">About Us</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="contact.html">Contact & Support</a>
+    </nav>
+    <!-- Right Actions -->
+    <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+      <a class="hidden sm:inline-flex items-center font-label-md text-sm text-[#525763] hover:text-primary px-2.5 py-1.5 transition-colors font-semibold" href="login.html">Sign In</a>
+      <a class="inline-flex items-center justify-center font-label-md text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#7C3AED] text-white hover:bg-[#6D28D9] font-semibold transition-all shadow-[0_4px_14px_rgba(124,58,237,0.25)] whitespace-nowrap" href="signup.html">Start Free</a>
+      <button type="button" onclick="document.getElementById('mobileNavDrawer').classList.toggle('hidden')" class="xl:hidden p-1.5 sm:p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-purple-50 transition" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl leading-none">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Drawer (No Admin, No User Portal) -->
+  <div id="mobileNavDrawer" class="hidden xl:hidden bg-white/95 backdrop-blur-xl border-b border-[#E7E2D9] px-4 py-3 shadow-xl">
+    <div class="flex flex-col gap-1.5">
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="index.html">Home</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="feautures.html">Features</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="pricing.html">Pricing</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="about.html">About Us</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="contact.html">Contact & Support</a>
+      <div class="h-px bg-gray-200 my-1"></div>
+      <div class="flex items-center gap-2 pt-1">
+        <a class="flex-1 text-center py-2 rounded-lg border border-gray-300 text-xs sm:text-sm font-semibold text-gray-700 hover:border-primary" href="login.html">Sign In</a>
+        <a class="flex-1 text-center py-2 rounded-lg bg-[#7C3AED] text-white text-xs sm:text-sm font-semibold shadow" href="signup.html">Start Free</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- Main Container -->
+    <main class="flex-1 max-w-[1280px] w-full mx-auto px-3 sm:px-6 md:px-8 pt-20 sm:pt-28 pb-8 sm:pb-12 flex items-center justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 w-full items-center">
+            
+            <!-- Left Info Column -->
+            <div class="hidden lg:flex lg:col-span-5 flex-col justify-between p-8 xl:p-10 bg-[#0F1117] text-white rounded-3xl relative overflow-hidden shadow-2xl min-h-[660px] border border-white/10">
+                <div class="absolute -right-20 -top-20 w-72 h-72 bg-[#7C3AED]/25 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -left-20 -bottom-20 w-72 h-72 bg-[#630ED4]/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 space-y-6">
+                    <a href="index.html" class="inline-flex items-center gap-3" title="Return to STACKLY Home">
+                        <img src="stackly logo.webp" alt="STACKLY" class="h-9 w-auto object-contain stackly-logo-violet">
+                        
+                    </a>
+
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/10 text-[#C4B5FD] text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-sparkles text-[#A78BFA]"></i> 30-Second Instant Onboarding
+                    </div>
+
+                    <h1 class="text-3xl xl:text-4xl font-extrabold text-white leading-tight">
+                        Start Storing Securely.<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-indigo-200 to-white">Free 5 GB Included.</span>
+                    </h1>
+
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Join developers, creative studios, and global enterprises using STACKLY's zero-knowledge cloud infrastructure for mission-critical storage.
+                    </p>
+                </div>
+
+                <!-- Storage Perks List -->
+                <div class="relative z-10 space-y-4 my-6">
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-9 h-9 rounded-xl bg-[#7C3AED]/25 text-[#A78BFA] flex items-center justify-center shrink-0 border border-purple-500/20">
+                            <i class="fa-solid fa-bolt text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Quantum Sync 2.0</h4>
+                            <p class="text-xs text-gray-400">Delta-streaming uploads at 0.4ms ping with no file size caps.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-9 h-9 rounded-xl bg-[#7C3AED]/25 text-[#A78BFA] flex items-center justify-center shrink-0 border border-purple-500/20">
+                            <i class="fa-solid fa-shield-halved text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Zero-Knowledge Enclaves</h4>
+                            <p class="text-xs text-gray-400">Client-side encryption keys where only you hold the keys.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3.5">
+                        <div class="w-9 h-9 rounded-xl bg-[#7C3AED]/25 text-[#A78BFA] flex items-center justify-center shrink-0 border border-purple-500/20">
+                            <i class="fa-solid fa-network-wired text-sm"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">S3 API &amp; Multi-Region</h4>
+                            <p class="text-xs text-gray-400">Drop-in compatibility with AWS CLI, rclone, Cyberduck, and SDKs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 text-xs text-gray-400 flex items-center justify-between border-t border-white/10 pt-4">
+                    <span>Need enterprise SLA with dedicated nodes?</span>
+                    <a href="contact.html" class="text-[#A78BFA] hover:text-white transition font-semibold">Contact Sales ↗</a>
+                </div>
+            </div>
+
+            <!-- Right Signup Form Column -->
+            <div class="lg:col-span-7 flex flex-col justify-center">
+                <div class="bg-white border border-[#E7E2D9] p-4 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl shadow-sm max-w-xl w-full mx-auto">
+                    
+                    <div class="mb-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#7C3AED] block mb-1">Get Started Today</span>
+                        <h2 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-[#0F1117] tracking-tight">Create your cloud account</h2>
+                        <p class="text-gray-500 text-sm mt-1">Select your preferred storage tier and get instant access to your vault.</p>
+                    </div>
+
+                    <!-- Main Signup Form -->
+                    <form id="signupForm" class="space-y-4" novalidate>
+                        <!-- Full Name -->
+                        <div class="form-group">
+                            <label for="signupName" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                                Full Name <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400 pointer-events-none">
+                                    <i class="fa-regular fa-user text-sm"></i>
+                                </span>
+                                <input type="text" id="signupName" name="fullname" required placeholder="e.g. Alex Morgan" 
+                                    class="w-full pl-10 pr-4 py-2.5 border border-[#E2DDD5] rounded-xl text-sm bg-white focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 outline-none transition font-medium">
+                            </div>
+                        </div>
+
+                        <!-- Work Email & Phone Row -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="signupEmail" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                                    Email Address <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400 pointer-events-none">
+                                        <i class="fa-regular fa-envelope text-sm"></i>
+                                    </span>
+                                    <input type="email" id="signupEmail" name="email" required placeholder="alex@company.com" 
+                                        class="w-full pl-10 pr-4 py-2.5 border border-[#E2DDD5] rounded-xl text-sm bg-white focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 outline-none transition font-medium">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="signupPhone" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                                    Phone Number <span class="text-red-500">*</span>
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400 pointer-events-none">
+                                        <i class="fa-solid fa-phone text-sm"></i>
+                                    </span>
+                                    <input type="tel" id="signupPhone" name="phone" required placeholder="98765 43210" 
+                                        class="w-full pl-10 pr-4 py-2.5 border border-[#E2DDD5] rounded-xl text-sm bg-white focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 outline-none transition font-medium">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Storage Tier Plan Choice -->
+                        <div class="form-group">
+                            <label for="accountTier" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                                Initial Cloud Storage Tier <span class="text-red-500">*</span>
+                            </label>
+                            <select id="accountTier" name="plan" class="w-full px-3.5 py-2.5 border border-[#E2DDD5] rounded-xl text-sm bg-white focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 outline-none transition font-medium">
+                                <option value="Personal Free" selected>Personal Free — 5 GB Free Forever (No Card Required)</option>
+                                <option value="Pro Cloud 2TB">Pro Cloud — 2 TB High Velocity Storage ($12 / month)</option>
+                                <option value="Team Vault 10TB">Team Vault — 10 TB Shared Multi-Seat Vault ($49 / month)</option>
+                                <option value="Enterprise Exabyte">Enterprise Cloud — Unlimited Multi-Region Exabyte Pool</option>
+                            </select>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="signupPassword" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                                Master Passphrase <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400 pointer-events-none">
+                                    <i class="fa-solid fa-lock text-sm"></i>
+                                </span>
+                                <input type="password" id="signupPassword" name="password" required placeholder="At least 8 characters (mixed case &amp; numbers)" 
+                                    class="w-full pl-10 pr-10 py-2.5 border border-[#E2DDD5] rounded-xl text-sm bg-white focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 outline-none transition font-medium">
+                                <button type="button" onclick="togglePasswordVisibility('signupPassword', 'signupEyeIcon')" class="absolute inset-y-0 right-0 pr-3.5 flex items-center text-gray-400 hover:text-[#0F1117]">
+                                    <i id="signupEyeIcon" class="fa-regular fa-eye text-sm"></i>
+                                </button>
+                            </div>
+                            
+                            <!-- Dynamic Password Strength Bar -->
+                            <div class="mt-2">
+                                <div class="w-full bg-gray-200 rounded-full h-1.5 overflow-hidden">
+                                    <div id="password-strength-bar" class="h-1.5 rounded-full bg-gray-300 transition-all duration-300" style="width: 10%"></div>
+                                </div>
+                                <div id="password-strength-text" class="text-[11px] text-gray-500 mt-1 font-medium font-mono">Strength: Min 8 chars (include upper, lower &amp; numbers)</div>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Password -->
+                        <div class="form-group">
+                            <label for="confirmPassword" class="block text-xs font-semibold text-gray-700 uppercase tracking-wider mb-1.5">
+                                Confirm Master Passphrase <span class="text-red-500">*</span>
+                            </label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center text-gray-400 pointer-events-none">
+                                    <i class="fa-solid fa-shield text-sm"></i>
+                                </span>
+                                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter password" 
+                                    class="w-full pl-10 pr-4 py-2.5 border border-[#E2DDD5] rounded-xl text-sm bg-white focus:border-[#7C3AED] focus:ring-2 focus:ring-[#7C3AED]/15 outline-none transition font-medium">
+                            </div>
+                        </div>
+
+                        <!-- Consent Checkbox -->
+                        <div class="pt-1">
+                            <label class="flex items-start gap-2.5 text-xs text-gray-600 cursor-pointer leading-snug">
+                                <input type="checkbox" required checked class="mt-0.5 rounded border-gray-300 text-[#7C3AED] focus:ring-[#7C3AED]">
+                                <span>I agree to STACKLY <a href="about.html" class="text-[#7C3AED] font-semibold underline">Terms of Service</a>, zero-knowledge encryption protocols, and acceptable data usage policies.</span>
+                            </label>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="pt-2">
+                            <button type="submit" class="w-full py-3 bg-[#7C3AED] hover:bg-[#6D28D9] text-white rounded-xl font-bold text-sm transition shadow-[0_4px_16px_rgba(124,58,237,0.3)] flex items-center justify-center gap-2">
+                                <span>Complete Registration &amp; Open Vault</span>
+                                <span class="text-base font-normal">→</span>
+                            </button>
+                        </div>
+                    </form>
+
+                    <!-- Login Link Footer -->
+                    <div class="mt-6 pt-5 border-t border-[#E7E2D9] text-center text-xs text-gray-600">
+                        Already have an active STACKLY account? 
+                        <a href="login.html" class="text-[#7C3AED] font-bold hover:underline ml-1">Sign in to Cloud Portal ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bottom Mini Footer -->
+    <footer class="py-5 px-4 text-center text-xs text-gray-500 border-t border-[#E7E2D9] bg-[#FAF9F6]">
+        <div class="max-w-[1280px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>&copy; 2026 STACKLY Cloud Storage Solutions &middot; MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</div>
+            <div class="flex items-center gap-4">
+                <a href="index.html" class="hover:text-[#7C3AED] transition">Home</a>
+                <a href="feautures.html" class="hover:text-[#7C3AED] transition">Features</a>
+                <a href="pricing.html" class="hover:text-[#7C3AED] transition">Pricing</a>
+                <a href="contact.html" class="hover:text-[#7C3AED] transition">Support</a>
+                <a href="404.html" class="hover:text-[#7C3AED] transition">Status</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Global Form Validation & State Engine -->
+    <script src="validation.js"></script>
+</body>
+</html>

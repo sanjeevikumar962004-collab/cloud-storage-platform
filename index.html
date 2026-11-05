@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>STACKLY - Cloud Storage &amp; Technology Solutions</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}.stackly-logo-violet{filter:brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(3475%) hue-rotate(256deg) brightness(98%) contrast(97%);}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#faf9f6",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#5d4201",
+          "secondary-fixed-dim": "#e9c176",
+          "on-background": "#1a1c1a",
+          "on-tertiary-fixed": "#23005c",
+          "surface-dim": "#dbdad7",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#f2f1ee",
+          "secondary-container": "#fed488",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#d2bbff",
+          "surface": "#faf9f6",
+          "secondary-fixed": "#ffdea5",
+          "surface-bright": "#faf9f6",
+          "on-tertiary-fixed-variant": "#5516be",
+          "tertiary": "#5d25c7",
+          "error": "#ba1a1a",
+          "surface-container": "#efeeeb",
+          "outline": "#7b7487",
+          "on-surface-variant": "#4a4455",
+          "tertiary-fixed-dim": "#d0bcff",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed": "#261900",
+          "inverse-primary": "#d2bbff",
+          "inverse-surface": "#2f312f",
+          "surface-variant": "#e3e2e0",
+          "tertiary-fixed": "#e9ddff",
+          "on-secondary-container": "#785a1a",
+          "surface-container-low": "#f4f3f1",
+          "primary": "#630ed4",
+          "on-primary-fixed": "#25005a",
+          "on-surface": "#1a1c1a",
+          "on-tertiary-container": "#ece1ff",
+          "surface-container-high": "#e9e8e5",
+          "on-error-container": "#93000a",
+          "on-tertiary": "#ffffff",
+          "primary-container": "#7c3aed",
+          "surface-tint": "#732ee4",
+          "on-primary-container": "#ede0ff",
+          "tertiary-container": "#7645e0",
+          "surface-container-highest": "#e3e2e0",
+          "secondary": "#775a19",
+          "primary-fixed": "#eaddff",
+          "outline-variant": "#ccc3d8",
+          "on-primary-fixed-variant": "#5a00c6",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin": "2.5rem",
+          "gutter": "1.5rem",
+          "margin-sm": "1.25rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "display-lg": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "code-sm": ["JetBrains Mono"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "mono-data": ["JetBrains Mono"]
+        },
+        "fontSize": {
+          "display-lg": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700"}],
+          "display-xl": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800"}],
+          "display-lg-mobile": ["36px", {lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700"}],
+          "body-lg": ["16px", {lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "400"}],
+          "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}],
+          "headline-xl-mobile": ["28px", {lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600"}],
+          "code-sm": ["12px", {lineHeight: "18px", letterSpacing: "0em", fontWeight: "500"}],
+          "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0em", fontWeight: "400"}],
+          "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "600"}],
+          "headline-xl": ["40px", {lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600"}],
+          "body-sm": ["13px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}],
+          "label-md": ["13px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600"}],
+          "label-sm": ["11px", {lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "600"}],
+          "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "600"}],
+          "mono-data": ["11px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  
+  @media (max-width: 360px) {
+    .h-20 { height: 4rem !important; }
+    .pt-20 { pt-16 !important; }
+    .pt-28 { pt-20 !important; }
+  }
+</style>
+
+
+<style>
+  html {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    scroll-behavior: smooth;
+    height: auto;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  /* Modern accessible styled scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4B5FD;
+    border-radius: 9999px;
+    border: 2px solid #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+  }
+</style>
+
+</head><body class="bg-[#FAF9F6] font-body-md text-body-md text-[#1E212B] antialiased selection:bg-purple-100 selection:text-primary overflow-x-hidden"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E7E2D9] shadow-[0_2px_16px_rgba(0,0,0,0.03)]">
+  <div class="h-16 sm:h-20 max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between gap-2 sm:gap-4">
+    <!-- Brand Logo (No text next to logo) -->
+    <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+      <a class="flex items-center group shrink-0" href="index.html" aria-label="STACKLY Home">
+        <img alt="STACKLY Brand Logo" class="h-7 sm:h-8 md:h-9 w-auto object-contain stackly-logo-violet transition-transform group-hover:scale-105" src="stackly logo.webp"/>
+      </a>
+      <div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F4F1EA] border border-[#E2DDD3]">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shadow-[0_0_6px_rgba(124,58,237,0.5)]"></span>
+        <span class="font-mono-data text-mono-data text-[#64748B] text-xs uppercase tracking-wider font-semibold">v2.4 Enterprise Cloud</span>
+      </div>
+    </div>
+    <!-- Desktop Navigation Links (No Admin, No User Portal) -->
+    <nav class="hidden xl:flex items-center gap-1">
+      <a aria-current="page" class="transition-colors bg-[#F3E8FF] text-primary font-semibold rounded-lg px-3 py-1.5 text-sm" href="index.html">Home</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="feautures.html">Features</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="pricing.html">Pricing</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="about.html">About Us</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="contact.html">Contact & Support</a>
+    </nav>
+    <!-- Right Actions -->
+    <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+      <a class="hidden sm:inline-flex items-center font-label-md text-sm text-[#525763] hover:text-primary px-2.5 py-1.5 transition-colors font-semibold" href="login.html">Sign In</a>
+      <a class="inline-flex items-center justify-center font-label-md text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#7C3AED] text-white hover:bg-[#6D28D9] font-semibold transition-all shadow-[0_4px_14px_rgba(124,58,237,0.25)] whitespace-nowrap" href="signup.html">Start Free</a>
+      <button type="button" onclick="document.getElementById('mobileNavDrawer').classList.toggle('hidden')" class="xl:hidden p-1.5 sm:p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-purple-50 transition" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl leading-none">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Drawer (No Admin, No User Portal) -->
+  <div id="mobileNavDrawer" class="hidden xl:hidden bg-white/95 backdrop-blur-xl border-b border-[#E7E2D9] px-4 py-3 shadow-xl">
+    <div class="flex flex-col gap-1.5">
+      <a class="px-3 py-2 rounded-lg bg-[#F3E8FF] text-primary font-bold text-sm" href="index.html">Home</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="feautures.html">Features</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="pricing.html">Pricing</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="about.html">About Us</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="contact.html">Contact & Support</a>
+      <div class="h-px bg-gray-200 my-1"></div>
+      <div class="flex items-center gap-2 pt-1">
+        <a class="flex-1 text-center py-2 rounded-lg border border-gray-300 text-xs sm:text-sm font-semibold text-gray-700 hover:border-primary" href="login.html">Sign In</a>
+        <a class="flex-1 text-center py-2 rounded-lg bg-[#7C3AED] text-white text-xs sm:text-sm font-semibold shadow" href="signup.html">Start Free</a>
+      </div>
+    </div>
+  </div>
+</header><main class="w-full pt-20 bg-[#FAF9F6]"><div class="flex flex-col w-full text-[#1E212B]">
+<!-- HERO SECTION -->
+<section class="relative w-full overflow-hidden pb-space-xl pt-space-lg md:pb-28">
+<!-- Luminous Ambient Radial Gradients -->
+<div class="pointer-events-none absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[520px] rounded-full bg-gradient-to-b from-[#E9D5FF]/40 via-[#FDF2F8]/25 to-transparent blur-[120px]"></div>
+<div class="pointer-events-none absolute top-36 -left-36 w-[450px] h-[450px] rounded-full bg-[#FEF3C7]/30 blur-[130px]"></div>
+<div class="pointer-events-none absolute top-48 -right-36 w-[480px] h-[480px] rounded-full bg-[#DDD6FE]/35 blur-[140px]"></div>
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 flex flex-col items-center text-center relative z-10">
+<!-- Announcement Pill -->
+<a class="group inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 border border-[#E5DFD4] backdrop-blur-md shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-primary/50 hover:shadow-md mb-space-lg" href="404.html">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#F3E8FF] text-[#7C3AED]">
+<span class="material-symbols-outlined text-sm">bolt</span>
+</span>
+<span class="text-xs sm:text-sm text-[#1E212B] tracking-tight">
+          STACKLY Quantum Sync 2.0 is now live — 10x faster edge transfers
+        </span>
+<span class="material-symbols-outlined text-sm text-[#7C3AED] transition-transform duration-200 group-hover:translate-x-1">arrow_forward</span>
+</a>
+<!-- Headline -->
+<h1 class="text-3xl xs:text-4xl sm:text-5xl lg:text-display-xl max-w-4xl tracking-tight text-[#0F1117] mb-space-md font-extrabold leading-tight">
+        Your Digital World. <br class="hidden sm:inline"/>
+<span class="bg-gradient-to-r from-[#0F1117] via-[#630ED4] to-[#7C3AED] bg-clip-text text-transparent">One Secure Cloud.</span>
+</h1>
+<!-- Subtext -->
+<p class="text-sm sm:text-base md:text-body-lg text-[#525763] max-w-2xl mx-auto mb-space-lg sm:mb-space-xl leading-relaxed">
+        Intelligent cloud storage engineered for velocity and absolute privacy. Store, synchronize, and collaborate on exabytes of data with zero-knowledge encryption and sub-millisecond edge access.
+      </p>
+<!-- CTAs -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md mb-space-lg">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-[#7C3AED] text-white font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all hover:bg-[#6D28D9] hover:shadow-[0_6px_20px_rgba(124,58,237,0.35)]" href="404.html">
+<span class="">Start for Free</span>
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-white border border-[#E2DDD5] text-[#1E212B] font-label-md text-label-md shadow-[0_2px_8px_rgba(0,0,0,0.03)] transition-all hover:border-primary/50 hover:bg-[#FAF9F6]" href="#features">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">play_circle</span>
+<span class="">Explore Features</span>
+</a>
+</div>
+<!-- Trust Line -->
+<div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono-data text-mono-data text-[#64748B]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-[#7C3AED]">check_circle</span>
+<span class="">Free 5 GB storage</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-[#7C3AED]">check_circle</span>
+<span class="">No credit card required</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-[#7C3AED]">check_circle</span>
+<span class="">Instant setup (under 30s)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE DASHBOARD PREVIEW CONSOLE -->
+<section class="w-full relative px-3 sm:px-6 md:px-8 lg:px-12 -mt-4 mb-space-xl">
+<div class="max-w-[1360px] mx-auto">
+<!-- Editorial Image Preview Feature Card -->
+<div class="mb-6 sm:mb-8 rounded-xl overflow-hidden bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] relative group max-w-full">
+<div class="relative aspect-[16/9] md:aspect-[21/9] w-full overflow-hidden">
+<img alt="Cloud storage dashboard on a frameless display in a tech workstation" class="w-full h-full object-cover rounded-xl transition duration-700 group-hover:scale-[1.01]" src="images/dashboard-preview.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 sm:bottom-4 sm:left-4 sm:right-4 md:bottom-6 md:left-6 md:right-6 flex flex-col sm:flex-row sm:items-center justify-between gap-2 bg-white/95 border border-[#EAE6DF] backdrop-blur-md p-2.5 sm:px-4 sm:py-3 rounded-lg shadow-lg">
+<div class="flex items-center gap-2 sm:gap-3 min-w-0">
+<span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.5)] shrink-0"></span>
+<div class="min-w-0">
+<p class="text-xs sm:text-label-md text-[#0F1117] font-semibold truncate">Production Edge Console • Live Multi-Region</p>
+<p class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate">Zero-knowledge stream monitoring (0.4ms ping)</p>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-2 font-mono-data text-xs text-[#7C3AED] shrink-0">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span class="font-semibold">HSM Verified</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Window Shell: Crisp Elevated Light UI -->
+<div class="rounded-xl bg-white border border-[#EAE6DF] shadow-[0_16px_40px_-8px_rgba(0,0,0,0.07)] overflow-hidden max-w-full">
+<!-- Window Top Bar -->
+<div class="h-10 sm:h-11 px-2.5 sm:px-4 bg-[#F8F7F4] border-b border-[#EAE6DF] flex items-center justify-between gap-2 overflow-hidden">
+<div class="flex items-center gap-1.5 sm:gap-2 min-w-0">
+<span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#EF4444]/80 shrink-0"></span>
+<span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#F59E0B]/80 shrink-0"></span>
+<span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#10B981]/90 shadow-[0_0_6px_rgba(16,185,129,0.4)] shrink-0"></span>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#525763] ml-1 sm:ml-2.5 flex items-center gap-1 truncate">
+<span class="material-symbols-outlined text-xs text-[#7C3AED] shrink-0">lock</span>
+<span class="truncate">stackly-vault://corp.primary.cloud</span>
+</span>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#F3E8FF] border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data font-semibold whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-ping shrink-0"></span>
+<span class="hidden xs:inline">Edge:</span> IN-MAA
+</span>
+<span class="hidden md:inline material-symbols-outlined text-sm text-[#64748B] hover:text-[#0F1117] transition-colors cursor-pointer">tune</span>
+<span class="hidden md:inline material-symbols-outlined text-sm text-[#64748B] hover:text-[#0F1117] transition-colors cursor-pointer">splitscreen</span>
+</div>
+</div>
+<!-- Dashboard Layout Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-0 lg:min-h-[580px] w-full">
+<!-- Left Quick Panel -->
+<div class="lg:col-span-3 bg-[#FAF9F6] border-b lg:border-b-0 lg:border-r border-[#EAE6DF] p-3 sm:p-4 flex flex-col justify-between gap-4">
+<div class="space-y-3 sm:space-y-4">
+<!-- Quick Actions -->
+<button class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-[#7C3AED] text-white font-label-md text-xs sm:text-label-md font-semibold shadow-[0_4px_12px_rgba(124,58,237,0.2)] transition hover:bg-[#6D28D9]">
+<span class="material-symbols-outlined text-base">cloud_upload</span>
+<span class="">Upload New Object</span>
+</button>
+<!-- Navigation Folders -->
+<nav class="space-y-1">
+<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg bg-white text-[#0F1117] font-label-md text-xs sm:text-label-md border-l-2 border-[#7C3AED] shadow-sm">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">folder_open</span>
+<span class="flex-1 text-left font-semibold">My Cloud</span>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#7C3AED] bg-[#F3E8FF] px-1.5 py-0.5 rounded">1,842</span>
+</button>
+<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+<span class="material-symbols-outlined text-base">group</span>
+<span class="flex-1 text-left truncate">Shared with Team</span>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B]">42</span>
+</button>
+<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+<span class="material-symbols-outlined text-base text-[#B45309]">encrypted</span>
+<span class="flex-1 text-left truncate">Encrypted Vault</span>
+<span class="px-1.5 py-0.5 rounded text-[10px] bg-[#FEF3C7] text-[#92400E] font-mono-data font-semibold">E2EE</span>
+</button>
+<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+<span class="material-symbols-outlined text-base">history</span>
+<span class="flex-1 text-left truncate">Recent Files</span>
+</button>
+<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+<span class="material-symbols-outlined text-base">delete_outline</span>
+<span class="flex-1 text-left truncate">Trash</span>
+</button>
+</nav>
+</div>
+<!-- Storage Quota Widget -->
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] space-y-2 shadow-sm">
+<div class="flex items-center justify-between text-[11px] sm:text-label-sm font-label-sm">
+<span class="text-[#0F1117] font-medium">Storage Capacity</span>
+<span class="text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data font-semibold">3.2% Used</span>
+</div>
+<div class="w-full h-2 rounded-full bg-[#F2EFE9] overflow-hidden">
+<div class="h-full w-[3.2%] bg-[#7C3AED] rounded-full"></div>
+</div>
+<div class="flex items-center justify-between font-mono-data text-[10px] sm:text-mono-data text-[#64748B]">
+<span class="">64.2 GB used</span>
+<span class="">2,000 GB</span>
+</div>
+</div>
+</div>
+<!-- Main Explorer Canvas -->
+<div class="lg:col-span-9 bg-white p-2.5 sm:p-4 lg:p-6 flex flex-col justify-between max-w-full overflow-hidden">
+<div class="space-y-3 sm:space-y-4">
+<!-- Search, Filters & Sync State -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-3">
+<div class="relative flex-1 w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-base text-[#94A3B8]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 sm:py-2 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] text-[#0F1117] text-xs sm:text-body-sm placeholder:text-[#94A3B8] focus:outline-none focus:border-[#7C3AED] focus:bg-white" placeholder="Search filenames, tags, hash, metadata..." type="text"/>
+</div>
+<!-- Category Tags -->
+<div class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none max-w-full">
+<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#7C3AED] text-white font-semibold text-[11px] sm:text-label-sm whitespace-nowrap shadow-sm">All</button>
+<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">Documents</button>
+<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">Design Systems</button>
+<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">CAD &amp; 3D</button>
+<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">Video Assets</button>
+</div>
+</div>
+<!-- Drag & Drop Instant Zone -->
+<div class="p-2.5 sm:p-4 rounded-xl bg-[#FAF9F6] border border-dashed border-[#D6CEC2] hover:border-primary flex items-center justify-start sm:justify-center gap-2 sm:gap-3 text-left transition duration-200 hover:bg-[#F6F2EA] cursor-pointer">
+<div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#F3E8FF] flex items-center justify-center text-[#7C3AED] shrink-0">
+<span class="material-symbols-outlined text-base sm:text-lg">upload_file</span>
+</div>
+<div class="min-w-0 flex-1">
+<p class="font-label-md text-xs sm:text-label-md text-[#0F1117] font-medium truncate">Drop files to instantly encrypt &amp; sync</p>
+<p class="text-[10px] sm:text-body-sm text-[#64748B] truncate">Zero-knowledge client-side encryption applied automatically</p>
+</div>
+</div>
+<!-- Interactive File Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 w-full">
+<!-- File Item 1 -->
+<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0 flex-1">
+<div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-red-50 text-red-600 flex items-center justify-center border border-red-100 shrink-0">
+<span class="material-symbols-outlined text-base sm:text-lg">picture_as_pdf</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Q4_Financial_Audit_2026.pdf">Q4_Financial_Audit_2026.pdf</h4>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">14.2 MB • Synced 2m ago</span>
+</div>
+</div>
+<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F8F7F4] border border-[#E5DFD4] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data flex items-center gap-1 font-semibold shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-xs">verified</span> AES-256
+</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="text-emerald-600 flex items-center gap-1 font-medium whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span> Verifiably Synced
+</span>
+<span class="whitespace-nowrap">Checksum: 9c8f...110b</span>
+</div>
+</div>
+<!-- File Item 2 -->
+<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0 flex-1">
+<div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-100 shrink-0">
+<span class="material-symbols-outlined text-base sm:text-lg">view_in_ar</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Brand_Identity_3D_Master.blend">Brand_Identity_3D_Master.blend</h4>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">480.0 MB • Shared with 8</span>
+</div>
+</div>
+<div class="flex -space-x-1 shrink-0">
+<span class="w-5 h-5 rounded-full bg-purple-600 flex items-center justify-center text-[9px] text-white font-bold">JD</span>
+<span class="w-5 h-5 rounded-full bg-amber-600 flex items-center justify-center text-[9px] text-white font-bold">AK</span>
+<span class="w-5 h-5 rounded-full bg-[#F5F2EB] border border-[#E2DDD5] flex items-center justify-center text-[9px] text-[#525763] font-semibold">+6</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="text-[#7C3AED] flex items-center gap-1 font-medium whitespace-nowrap">
+<span class="material-symbols-outlined text-xs">group</span> Collaborative Lock
+</span>
+<span class="whitespace-nowrap">Version 4.2</span>
+</div>
+</div>
+<!-- File Item 3 -->
+<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0 flex-1">
+<div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center border border-[#E9D5FF] shrink-0">
+<span class="material-symbols-outlined text-base sm:text-lg">design_services</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Stackly_Mobile_Design_System.fig">Stackly_Mobile_Design_System.fig</h4>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">82.4 MB • Delta Streaming</span>
+</div>
+</div>
+<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F3E8FF] border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data flex items-center gap-1 font-semibold shrink-0 whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse"></span> Streaming
+</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="whitespace-nowrap">Active Edits: 3 Designers</span>
+<span class="text-[#7C3AED] font-semibold whitespace-nowrap">0.4ms ping</span>
+</div>
+</div>
+<!-- File Item 4 -->
+<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-2 min-w-0 flex-1">
+<div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-[#F8F7F4] border border-[#E2DDD5] text-[#525763] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-base sm:text-lg">data_object</span>
+</div>
+<div class="min-w-0 flex-1">
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Salem_DataCenter_Cluster_Telemetry.json">Salem_DataCenter_Cluster_Telemetry.json</h4>
+<span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">2.4 MB • Continuous Sync</span>
+</div>
+</div>
+<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F8F7F4] text-[#525763] font-mono-data text-[10px] sm:text-mono-data border border-[#E2DDD5] shrink-0 whitespace-nowrap">JSON API</span>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="text-[#7C3AED] flex items-center gap-1 font-medium whitespace-nowrap">
+<span class="material-symbols-outlined text-xs">dns</span> Salem Pod #04
+</span>
+<span class="whitespace-nowrap">Updated just now</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Floating Telemetry Banner -->
+<div class="mt-3 sm:mt-4 pt-2.5 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 bg-[#FAF9F6] border border-[#EAE6DF] px-2.5 sm:px-4 py-2 rounded-lg text-[10px] sm:text-mono-data font-mono-data w-full">
+<div class="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
+<span class="relative flex h-2 w-2 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-[#0F1117] whitespace-nowrap">Live: <strong class="text-[#7C3AED] font-bold">1.2 GB/s</strong></span>
+<span class="text-[#D6CEC2]">•</span>
+<span class="text-[#525763] truncate">Node: <strong class="text-[#0F1117]">IN-MAA (Salem)</strong></span>
+</div>
+<div class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-[#64748B]">
+<span class="whitespace-nowrap">Loss: 0.00%</span>
+<span class="text-[#D6CEC2]">•</span>
+<span class="whitespace-nowrap">Uptime: 99.999%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LOGO MARQUEE: TRUSTED BY TEAMS -->
+<section class="w-full py-space-xl bg-[#F6F4EE]/80 border-y border-[#EAE6DF]">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 text-center">
+<p class="font-label-md text-label-md uppercase tracking-wider text-[#64748B] mb-space-lg font-semibold">
+        Trusted by over 45,000+ engineering teams, studios, and high-growth enterprises worldwide
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-8 md:gap-14 opacity-75">
+<!-- Logo 1: MetaScale -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<svg class="w-6 h-6 text-[#7C3AED]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+<polyline points="2 17 12 22 22 17"></polyline>
+<polyline points="2 12 12 17 22 12"></polyline>
+</svg>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">METASCALE</span>
+</div>
+<!-- Logo 2: NexusAI -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="10"></circle>
+<circle cx="12" cy="12" r="4"></circle>
+<line x1="4.93" x2="9.17" y1="4.93" y2="9.17"></line>
+<line x1="14.83" x2="19.07" y1="14.83" y2="19.07"></line>
+<line x1="14.83" x2="19.07" y1="9.17" y2="4.93"></line>
+<line x1="4.93" x2="9.17" y1="19.07" y2="14.83"></line>
+</svg>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">NexusAI</span>
+</div>
+<!-- Logo 3: CloudSync Corp -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<svg class="w-6 h-6 text-[#7C3AED]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+</svg>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">CloudSync</span>
+</div>
+<!-- Logo 4: HyperFlow -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+</svg>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">HYPERFLOW</span>
+</div>
+<!-- Logo 5: Veloce Labs -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<svg class="w-6 h-6 text-[#8B5CF6]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<rect height="20" rx="5" width="20" x="2" y="2"></rect>
+<path d="m9 15 3-6 3 6"></path>
+</svg>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">VeloceLabs</span>
+</div>
+<!-- Logo 6: AstraData -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<svg class="w-6 h-6 text-[#7C3AED]" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="12" cy="12" r="9"></circle>
+<path d="M3.6 9h16.8"></path>
+<path d="M3.6 15h16.8"></path>
+<path d="M11.5 3a17 17 0 0 0 0 18"></path>
+<path d="M12.5 3a17 17 0 0 1 0 18"></path>
+</svg>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">ASTRADATA</span>
+</div>
+<!-- Logo 7: Zoho Partners -->
+<div class="flex items-center gap-2 group cursor-pointer transition hover:opacity-100 hover:text-primary">
+<span class="w-6 h-6 rounded bg-[#F3E8FF] text-[#7C3AED] font-bold text-xs flex items-center justify-center border border-[#E9D5FF]">Z</span>
+<span class="font-headline-sm text-headline-sm text-[#0F1117] tracking-tighter">Zoho Partners</span>
+</div>
+</div>
+</div>
+</section>
+<!-- KEY FEATURES GRID (6 Pillars) -->
+<section class="w-full py-space-xl md:py-28 relative" id="features">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<!-- Section Header -->
+<div class="max-w-3xl mb-space-xl">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Core Architecture</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] mt-2 tracking-tight font-bold">
+          Engineered for raw throughput, mathematical privacy, and zero downtime.
+        </h2>
+<p class="font-body-lg text-body-lg text-[#525763] mt-3">
+          Every layer of the STACKLY infrastructure is built to solve massive scale without the friction of legacy cloud drives.
+        </p>
+</div>
+<!-- 6-Grid Bento -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] transition duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="w-12 h-12 rounded-lg bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center mb-6 border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">cloud_done</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Secure Cloud Storage</h3>
+<p class="font-body-md text-body-md text-[#525763] mb-4">
+            Multi-region distributed redundancy across top tier-4 data centers with an unparalleled 99.999999999% (11 9s) durability guarantee.
+          </p>
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-sm">shield</span>
+<span class="">Zero-Single-Point-of-Failure</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] transition duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="w-12 h-12 rounded-lg bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center mb-6 border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">share_location</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Instant File Sharing</h3>
+<p class="font-body-md text-body-md text-[#525763] mb-4">
+            Generate password-protected links with custom expiry timers, auto-revoke access, and granular download-only or view-only policies.
+          </p>
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-sm">timer</span>
+<span class="">Self-destruct link support</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] transition duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="w-12 h-12 rounded-lg bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center mb-6 border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">sync_saved_locally</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Automatic Backup</h3>
+<p class="font-body-md text-body-md text-[#525763] mb-4">
+            Continuous delta sync engine monitors file system changes and streams only byte-level differences with microscopic CPU footprint.
+          </p>
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-sm">memory</span>
+<span class="">&lt; 0.2% Background CPU load</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] transition duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="w-12 h-12 rounded-lg bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center mb-6 border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">devices</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Cross-Device Sync</h3>
+<p class="font-body-md text-body-md text-[#525763] mb-4">
+            Flawless bilateral synchronization across macOS, Windows, Linux kernel daemons, iOS, and Android with native kernel notifications.
+          </p>
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-sm">bolt</span>
+<span class="">Sub-millisecond file event trigger</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] transition duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="w-12 h-12 rounded-lg bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center mb-6 border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">key</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Advanced Encryption</h3>
+<p class="font-body-md text-body-md text-[#525763] mb-4">
+            End-to-end zero-knowledge cryptographic envelope: AES-GCM-256 for data at rest and Argon2id for military-grade client-side key derivation.
+          </p>
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-sm">lock_reset</span>
+<span class="">Your keys never touch our servers</span>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04),0_4px_10px_-2px_rgba(0,0,0,0.02)] transition duration-300 hover:border-primary/50 hover:shadow-lg hover:-translate-y-1">
+<div class="w-12 h-12 rounded-lg bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center mb-6 border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">group_work</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Team Collaboration</h3>
+<p class="font-body-md text-body-md text-[#525763] mb-4">
+            Live multi-cursor canvas reviews, in-file line annotations for 150+ file types, and comprehensive role-based access control (RBAC).
+          </p>
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-sm">security</span>
+<span class="">Granular permission matrices</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE CAPACITY COMPARISON TOOL -->
+<section class="w-full py-space-xl bg-[#F6F3EC]/70 border-y border-[#EAE6DF]">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Scale Visualizer</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] mt-2 tracking-tight font-bold">
+          How much can you fit in STACKLY?
+        </h2>
+<p class="font-body-md text-body-md text-[#525763] mt-2">
+          Toggle between plans to see how your digital production footprint translates into real-world capacity.
+        </p>
+<!-- Interactive Tier Selector -->
+<div class="mt-6 inline-flex p-1.5 rounded-xl bg-white border border-[#E2DDD5] shadow-sm gap-1" id="tierSelector">
+<button class="px-5 py-2 rounded-lg font-label-md text-label-md bg-[#7C3AED] text-white font-semibold transition shadow-[0_2px_10px_rgba(124,58,237,0.25)]" id="btn-free" onclick="updateCapacity('free')">5 GB Free</button>
+<button class="px-5 py-2 rounded-lg font-label-md text-label-md text-[#525763] hover:text-[#0F1117] transition" id="btn-pro" onclick="updateCapacity('pro')">2 TB Pro</button>
+<button class="px-5 py-2 rounded-lg font-label-md text-label-md text-[#525763] hover:text-[#0F1117] transition" id="btn-biz" onclick="updateCapacity('biz')">5 TB Business</button>
+</div>
+</div>
+<!-- Capacity Dynamic Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+<!-- Stat Metric 1 -->
+<div class="p-8 rounded-xl bg-white border border-[#EAE6DF] text-center space-y-3 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)]">
+<div class="w-12 h-12 mx-auto rounded-full bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">photo_camera</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-[#0F1117] font-bold" id="stat-photos">1,250</div>
+<div class="font-label-md text-label-md text-[#0F1117] font-semibold">Uncompressed RAW Photos</div>
+<p class="font-body-sm text-body-sm text-[#64748B]" id="desc-photos">Perfect for personal backups and high-res mobile shots.</p>
+</div>
+<!-- Stat Metric 2 -->
+<div class="p-8 rounded-xl bg-white border border-[#EAE6DF] text-center space-y-3 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)]">
+<div class="w-12 h-12 mx-auto rounded-full bg-[#FEF3C7] text-[#92400E] flex items-center justify-center border border-[#FDE68A]">
+<span class="material-symbols-outlined text-2xl">video_camera_back</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-[#0F1117] font-bold" id="stat-videos">30 min</div>
+<div class="font-label-md text-label-md text-[#0F1117] font-semibold">ProRes 4K Video Clips</div>
+<p class="font-body-sm text-body-sm text-[#64748B]" id="desc-videos">Ample room for daily mobile captures and short clips.</p>
+</div>
+<!-- Stat Metric 3 -->
+<div class="p-8 rounded-xl bg-white border border-[#EAE6DF] text-center space-y-3 shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)]">
+<div class="w-12 h-12 mx-auto rounded-full bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-2xl">description</span>
+</div>
+<div class="font-headline-lg text-headline-lg text-[#0F1117] font-bold" id="stat-docs">50,000</div>
+<div class="font-label-md text-label-md text-[#0F1117] font-semibold">PDFs, Code Repos &amp; Docs</div>
+<p class="font-body-sm text-body-sm text-[#64748B]" id="desc-docs">Store your entire digital library and legal paperwork securely.</p>
+</div>
+</div>
+<div class="text-center mt-space-lg">
+<a class="inline-flex items-center gap-1.5 font-label-md text-label-md text-[#7C3AED] hover:text-[#6D28D9] font-semibold transition" href="404.html">
+<span class="">Need custom PB-scale petabyte storage clusters?</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS (3 SIMPLE STEPS) -->
+<section class="w-full py-space-xl md:py-28">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Zero Setup Friction</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] mt-2 tracking-tight font-bold">
+          Three steps to complete sovereignty.
+        </h2>
+<p class="font-body-md text-body-md text-[#525763] mt-2">
+          From sign-up to seamless encrypted synchronization in less than two minutes.
+        </p>
+</div><div class="max-w-5xl mx-auto mb-10 rounded-xl overflow-hidden bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)]"><div class="grid grid-cols-1 md:grid-cols-12 items-center"><div class="md:col-span-7 h-[280px] w-full overflow-hidden relative"><img alt="Professional software engineering team collaborating around multi-monitor workstations" class="w-full h-full object-cover" src="images/engineers-collab.webp"/><div class="absolute inset-0 bg-gradient-to-r from-transparent to-white/40 hidden md:block"></div></div><div class="md:col-span-5 p-6 md:p-8 space-y-3"><div class="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-[#F3E8FF] border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-mono-data font-semibold"><span class="material-symbols-outlined text-xs">groups</span><span class="">Global Engineering Footprint</span></div><h4 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold">Engineered for Cross-Functional Velocity</h4><p class="font-body-sm text-body-sm text-[#525763]">Used daily by over 45,000+ engineers, creative directors, and security researchers syncing Petabyte-scale code bases with multi-cursor collaboration.</p></div></div></div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+<!-- Step 1 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] relative group hover:border-primary/50 transition">
+<div class="flex items-center justify-between mb-6">
+<span class="font-display-xl text-display-xl text-purple-200 font-black">01</span>
+<span class="w-10 h-10 rounded-full bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-xl">phonelink_setup</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Connect Your Devices</h3>
+<p class="font-body-md text-body-md text-[#525763]">
+            Download our lightweight native agents for macOS, Windows, Linux, iOS, or Android. Or simply mount our WebDAV / S3-compatible endpoint.
+          </p>
+</div>
+<!-- Step 2 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] relative group hover:border-primary/50 transition">
+<div class="flex items-center justify-between mb-6">
+<span class="font-display-xl text-display-xl text-amber-200 font-black">02</span>
+<span class="w-10 h-10 rounded-full bg-[#FEF3C7] text-[#92400E] flex items-center justify-center border border-[#FDE68A]">
+<span class="material-symbols-outlined text-xl">folder_zip</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Drop &amp; Organize</h3>
+<p class="font-body-md text-body-md text-[#525763]">
+            Drag files directly into your local STACKLY folder. Automated AI smart tags index data instantly while cryptographic envelopes secure it locally.
+          </p>
+</div>
+<!-- Step 3 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] relative group hover:border-primary/50 transition">
+<div class="flex items-center justify-between mb-6">
+<span class="font-display-xl text-display-xl text-purple-200 font-black">03</span>
+<span class="w-10 h-10 rounded-full bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center border border-[#E9D5FF]">
+<span class="material-symbols-outlined text-xl">send_time_extension</span>
+</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-[#0F1117] font-semibold mb-2">Share &amp; Collaborate</h3>
+<p class="font-body-md text-body-md text-[#525763]">
+            Share secure links with one click. Team members can annotate, leave time-coded video markers, or pull latest git-style file revisions instantly.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECURITY & COMPLIANCE SPOTLIGHT -->
+<section class="w-full py-space-xl bg-[#F6F3EC]/70 border-y border-[#EAE6DF] relative overflow-hidden">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Text & Badges -->
+<div class="lg:col-span-6 space-y-6">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Zero Trust Architecture</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] font-bold tracking-tight">
+            Security that satisfies the world’s strictest defense and banking standards.
+          </h2>
+<p class="font-body-md text-body-md text-[#525763]">
+            We operate under a strict zero-knowledge model: your encryption keys are derived from your master password client-side using Argon2id. No STACKLY engineer, third-party ISP, or government agency can view your encrypted objects.
+          </p>
+<!-- Compliance Badges -->
+<div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">verified</span>
+<span class="font-label-sm text-label-sm text-[#0F1117] font-medium">SOC 2 Type II</span>
+</div>
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">verified</span>
+<span class="font-label-sm text-label-sm text-[#0F1117] font-medium">ISO/IEC 27001</span>
+</div>
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">verified</span>
+<span class="font-label-sm text-label-sm text-[#0F1117] font-medium">GDPR Compliant</span>
+</div>
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">shield_with_heart</span>
+<span class="font-label-sm text-label-sm text-[#0F1117] font-medium">Indian DPDP Act</span>
+</div>
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">key</span>
+<span class="font-label-sm text-label-sm text-[#0F1117] font-medium">FIDO2 / WebAuthn</span>
+</div>
+<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">encrypted</span>
+<span class="font-label-sm text-label-sm text-[#0F1117] font-medium">AES-GCM-256</span>
+</div>
+</div>
+</div>
+<!-- Right: Cryptographic Key Diagram -->
+<div class="lg:col-span-6">
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_16px_40px_-8px_rgba(0,0,0,0.06)] space-y-6">
+<div class="flex items-center justify-between pb-3">
+<div class="flex items-center gap-2 font-mono-data text-mono-data text-[#7C3AED] font-semibold">
+<span class="material-symbols-outlined text-base">enhanced_encryption</span>
+<span class="">CRYPTOGRAPHIC PIPELINE ENVELOPE</span>
+</div>
+<span class="px-2 py-0.5 rounded text-[11px] bg-[#FAF9F6] border border-[#E2DDD5] text-[#64748B] font-mono-data font-medium">v4.1 RFC</span>
+</div>
+<!-- Pipeline Diagram Steps -->
+<div class="space-y-4">
+<!-- Pipeline Box 1 -->
+<div class="p-3.5 rounded-lg bg-[#FAF9F6] border border-[#EAE6DF] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center font-bold text-xs font-mono-data border border-[#E9D5FF]">01</div>
+<div>
+<h5 class="font-label-md text-label-md text-[#0F1117] font-semibold">Client Device Derivation</h5>
+<p class="font-mono-data text-mono-data text-[#64748B]">Argon2id (m=64MB, t=4, p=4) → 512-bit Master Key</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-base text-emerald-600">check_circle</span>
+</div>
+<!-- Connecting Line Down -->
+<div class="flex justify-center -my-2">
+<span class="material-symbols-outlined text-[#7C3AED] text-sm">arrow_downward</span>
+</div>
+<!-- Pipeline Box 2 -->
+<div class="p-3.5 rounded-lg bg-[#FAF9F6] border border-[#EAE6DF] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-[#FEF3C7] text-[#92400E] flex items-center justify-center font-bold text-xs font-mono-data border border-[#FDE68A]">02</div>
+<div>
+<h5 class="font-label-md text-label-md text-[#0F1117] font-semibold">Ephemeral Chunk Cipher</h5>
+<p class="font-mono-data text-mono-data text-[#64748B]">Payload split into 4MB chunks • AES-256-GCM authenticated tags</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-base text-[#7C3AED]">lock</span>
+</div>
+<!-- Connecting Line Down -->
+<div class="flex justify-center -my-2">
+<span class="material-symbols-outlined text-[#7C3AED] text-sm">arrow_downward</span>
+</div>
+<!-- Pipeline Box 3 -->
+<div class="p-3.5 rounded-lg bg-[#FAF9F6] border border-[#EAE6DF] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center font-bold text-xs font-mono-data border border-[#E9D5FF]">03</div>
+<div>
+<h5 class="font-label-md text-label-md text-[#0F1117] font-semibold">Zero-Knowledge Cloud Ingestion</h5>
+<p class="font-mono-data text-mono-data text-[#64748B]">STACKLY Nodes store encrypted blocks with random UUIDs only</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-base text-[#7C3AED]">cloud_done</span>
+</div>
+</div>
+<!-- Salem Data Center Badge -->
+<div class="relative rounded-xl overflow-hidden bg-white shadow-sm border border-[#EAE6DF]"><div class="relative h-[220px] w-full overflow-hidden"><img alt="High-tech enterprise Tier-4 green cloud data center interior with glowing blue LED server racks" class="w-full h-full object-cover rounded-xl" src="images/datacenter-salem.webp"/><div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div><div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs font-mono-data text-white"><span class="flex items-center gap-1.5 px-2.5 py-1 rounded bg-white/90 border border-white/40 backdrop-blur-md text-[#0F1117] font-semibold"><span class="material-symbols-outlined text-xs text-[#7C3AED]">verified_user</span> Tier-4 ISO 22237 Certified Facility</span><span class="px-2.5 py-1 rounded bg-black/60 border border-white/20 backdrop-blur-md text-gray-200">Salem, TN • Sovereign Node</span></div></div></div><div class="p-3 rounded-lg bg-[#FAF9F6] border border-[#EAE6DF] flex items-center justify-between text-[#525763]">
+<span class="font-body-sm text-body-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">pin_drop</span>
+                Data Center: MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008 (Sovereign Residency)
+              </span>
+<span class="font-mono-data text-mono-data text-[#7C3AED] font-semibold">Tier IV Certified</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CUSTOMER TESTIMONIALS -->
+<section class="w-full py-space-xl md:py-28">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Proven in Production</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] font-bold mt-2 tracking-tight">
+          Built for teams with extreme storage demands.
+        </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Review 1 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] flex flex-col justify-between space-y-6 hover:border-primary/50 transition">
+<p class="font-body-md text-body-md text-[#1E212B] italic leading-relaxed">
+            "STACKLY replaced four separate fragmented tools for us. We sync multi-gigabyte build artifacts and AI training weights every hour. The delta sync performance is indistinguishable from local NVMe drives."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-[#F2EFE9]">
+<img class="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20 shadow-sm" data-alt="Professional headshot of a female technology executive in an ultramodern studio setting with subtle blue backlighting, deep depth of field, sharp crisp contrast." src="images/testimonial-elena.webp"/>
+<div>
+<h4 class="font-label-md text-label-md text-[#0F1117] font-semibold">Priya Sundaram</h4>
+<p class="font-body-sm text-body-sm text-[#64748B]">VP of Engineering at MetaScale</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] flex flex-col justify-between space-y-6 hover:border-primary/50 transition">
+<p class="font-body-md text-body-md text-[#1E212B] italic leading-relaxed">
+            "We handle uncompressed 8K raw cinema footage and huge 3D scene files. Sending client review links with customized expiring access and zero latency playback changed how our whole post-production studio operates."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-[#F2EFE9]">
+<img class="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20 shadow-sm" data-alt="Portrait of a male creative director wearing dark techwear in a high-end cinematic post-production suite with moody cyan and ambient rim lighting." src="images/testimonial-marcus.webp"/>
+<div>
+<h4 class="font-label-md text-label-md text-[#0F1117] font-semibold">Marcus Vance</h4>
+<p class="font-body-sm text-body-sm text-[#64748B]">Creative Director, HyperFlow Studios</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] flex flex-col justify-between space-y-6 hover:border-primary/50 transition">
+<p class="font-body-md text-body-md text-[#1E212B] italic leading-relaxed">
+            "For a fintech company operating strictly under Indian DPDP Act guidelines, having data sovereign guarantees anchored in Tamil Nadu with true client-side zero-knowledge encryption made our audit pass effortlessly."
+          </p>
+<div class="flex items-center gap-3 pt-4 border-t border-[#F2EFE9]">
+<img class="w-12 h-12 rounded-full object-cover ring-2 ring-primary/20 shadow-sm" data-alt="Portrait of a modern enterprise cloud architect in a sleek software laboratory with server rack ambient blue LEDs in blurred background." src="images/testimonial-sophia.webp"/>
+<div>
+<h4 class="font-label-md text-label-md text-[#0F1117] font-semibold">Karthik Narayanan</h4>
+<p class="font-body-sm text-body-sm text-[#64748B]">Principal Cloud Architect, AstraData</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- PRICING PREVIEW -->
+<section class="w-full py-space-xl bg-[#F6F3EC]/70 border-y border-[#EAE6DF]">
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Transparent Pricing</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] font-bold mt-2 tracking-tight">
+          Simple, honest storage tiers.
+        </h2>
+<p class="font-body-md text-body-md text-[#525763] mt-2">
+          Start free forever. Upgrade seamlessly as your data and team multiply.
+        </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+<!-- Tier 1: Free -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] flex flex-col justify-between space-y-6">
+<div>
+<span class="font-label-md text-label-md text-[#64748B] uppercase font-semibold">Starter</span>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="font-display-xl text-display-xl text-[#0F1117] font-extrabold">$0</span>
+<span class="font-body-sm text-body-sm text-[#64748B]">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#525763] mt-2">Essential encrypted cloud for personal files and backups.</p>
+<ul class="mt-6 space-y-3 font-body-sm text-body-sm text-[#1E212B]">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class=""><strong>5 GB</strong> High-speed Cloud Storage</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">AES-256 Zero-Knowledge Vault</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">Up to 2 connected devices</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">30-day file version history</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-3 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] hover:bg-[#F2EFE9] text-[#0F1117] text-center font-label-md text-label-md font-semibold transition" href="404.html">
+            Create Free Account
+          </a>
+</div>
+<!-- Tier 2: Pro (Featured) -->
+<div class="p-6 md:p-8 rounded-xl bg-white border-2 border-[#7C3AED] shadow-[0_16px_40px_rgba(124,58,237,0.1)] relative flex flex-col justify-between space-y-6">
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-[#7C3AED] text-white font-mono-data text-mono-data uppercase tracking-wider font-semibold shadow-sm">
+            Most Popular
+          </div>
+<div>
+<span class="font-label-md text-label-md text-[#7C3AED] uppercase font-bold">Professional</span>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="font-display-xl text-display-xl text-[#0F1117] font-extrabold">$9.99</span>
+<span class="font-body-sm text-body-sm text-[#64748B]">/ month</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#525763] mt-2">Pro power for developers, designers, and creators.</p>
+<ul class="mt-6 space-y-3 font-body-sm text-body-sm text-[#1E212B]">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class=""><strong>2,000 GB (2 TB)</strong> NVMe-speed Storage</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">Unlimited connected devices</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">180-day version rollback &amp; snapshots</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">Password &amp; expiring share links</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">Priority Quantum Edge routing</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-3 rounded-lg bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-center font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition" href="404.html">
+            Start 14-Day Free Pro Trial
+          </a>
+</div>
+<!-- Tier 3: Business -->
+<div class="p-6 md:p-8 rounded-xl bg-white border border-[#EAE6DF] shadow-[0_10px_30px_-5px_rgba(0,0,0,0.04)] flex flex-col justify-between space-y-6">
+<div>
+<span class="font-label-md text-label-md text-[#92400E] uppercase font-bold">Enterprise / Team</span>
+<div class="mt-4 flex items-baseline gap-1">
+<span class="font-display-xl text-display-xl text-[#0F1117] font-extrabold">$24.00</span>
+<span class="font-body-sm text-body-sm text-[#64748B]">/ user / mo</span>
+</div>
+<p class="font-body-sm text-body-sm text-[#525763] mt-2">Complete governance, custom sovereignty, and PB scale.</p>
+<ul class="mt-6 space-y-3 font-body-sm text-body-sm text-[#1E212B]">
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class=""><strong>5,000 GB (5 TB)</strong> pooled per seat</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">SAML SSO, SCIM &amp; FIDO2 enforcement</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">Infinite file revision retention</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">Dedicated Salem Private Pod deployment</span>
+</li>
+<li class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">check</span>
+<span class="">99.999% SLA &amp; 24/7 dedicated engineer</span>
+</li>
+</ul>
+</div>
+<a class="w-full py-3 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] hover:bg-[#F2EFE9] text-[#0F1117] text-center font-label-md text-label-md font-semibold transition" href="404.html">
+            Contact Sales
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ ACCORDION -->
+<section class="w-full py-space-xl md:py-28">
+<div class="max-w-4xl mx-auto px-3 sm:px-6 md:px-8 lg:px-12">
+<div class="text-center mb-space-xl">
+<span class="font-mono-data text-mono-data uppercase tracking-wider text-[#7C3AED] font-semibold">Got Questions?</span>
+<h2 class="font-headline-lg text-headline-lg text-[#0F1117] font-bold mt-2 tracking-tight">
+          Frequently Answered Inquiries
+        </h2>
+</div>
+<div class="space-y-4" id="faqAccordion">
+<!-- Q1 -->
+<div class="rounded-xl bg-white border border-[#EAE6DF] shadow-[0_2px_12px_rgba(0,0,0,0.03)] overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-[#0F1117] font-semibold" onclick="toggleFaq('faq-1')">
+<span class="">What does "zero-knowledge encryption" actually mean for my files?</span>
+<span class="material-symbols-outlined text-[#7C3AED] transition-transform duration-200" id="icon-faq-1">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-body-md font-body-md text-[#525763] hidden border-t border-[#F2EFE9] pt-4" id="faq-1">
+            Zero-knowledge means that your data is encrypted and decrypted locally on your client hardware using a key derived from your passphrase. The encrypted ciphertext alone reaches our cloud. Even under court subpoena or system intrusion, no one—not even STACKLY system administrators—has the mathematical ability to read your stored contents.
+          </div>
+</div>
+<!-- Q2 -->
+<div class="rounded-xl bg-white border border-[#EAE6DF] shadow-[0_2px_12px_rgba(0,0,0,0.03)] overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-[#0F1117] font-semibold" onclick="toggleFaq('faq-2')">
+<span class="">Where is my data geographically stored? Can I choose data residency?</span>
+<span class="material-symbols-outlined text-[#7C3AED] transition-transform duration-200" id="icon-faq-2">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-body-md font-body-md text-[#525763] hidden border-t border-[#F2EFE9] pt-4" id="faq-2">
+            Our primary sovereign infrastructure is located in Salem &amp; Chennai, Tamil Nadu, India, paired with distributed edge caching nodes across 40+ global locations. Business and Enterprise customers can lock their storage clusters strictly to Indian borders to ensure 100% compliance with the Digital Personal Data Protection (DPDP) Act.
+          </div>
+</div>
+<!-- Q3 -->
+<div class="rounded-xl bg-white border border-[#EAE6DF] shadow-[0_2px_12px_rgba(0,0,0,0.03)] overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-[#0F1117] font-semibold" onclick="toggleFaq('faq-3')">
+<span class="">How does STACKLY Quantum Sync achieve 10x faster edge speeds?</span>
+<span class="material-symbols-outlined text-[#7C3AED] transition-transform duration-200" id="icon-faq-3">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-body-md font-body-md text-[#525763] hidden border-t border-[#F2EFE9] pt-4" id="faq-3">
+            Standard cloud drives sync entire files every time a byte changes. STACKLY uses delta-chunking: when you change a single frame in a 40 GB video or a single line of code, our sync daemon transmits only the specific altered 4 MB blocks over parallel UDP/QUIC streams directly to the closest edge point of presence.
+          </div>
+</div>
+<!-- Q4 -->
+<div class="rounded-xl bg-white border border-[#EAE6DF] shadow-[0_2px_12px_rgba(0,0,0,0.03)] overflow-hidden">
+<button class="w-full p-5 text-left flex items-center justify-between gap-4 font-headline-sm text-headline-sm text-[#0F1117] font-semibold" onclick="toggleFaq('faq-4')">
+<span class="">Is the free 5 GB plan genuinely free without automatic credit card billing?</span>
+<span class="material-symbols-outlined text-[#7C3AED] transition-transform duration-200" id="icon-faq-4">expand_more</span>
+</button>
+<div class="px-5 pb-5 text-body-md font-body-md text-[#525763] hidden border-t border-[#F2EFE9] pt-4" id="faq-4">
+            Yes. You never have to input a credit card to access your free 5 GB storage space. It does not expire, does not feature adware, and includes full zero-knowledge encryption rights.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- FINAL CONVERSION BANNER -->
+<section class="w-full py-space-xl md:py-28 relative overflow-hidden bg-white border-t border-[#EAE6DF]">
+<!-- Ambient Glow behind CTA -->
+<div class="pointer-events-none absolute -bottom-24 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-[#EDE9FE]/60 blur-[120px] rounded-full"></div>
+<div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 text-center relative z-10">
+<div class="max-w-3xl mx-auto space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FAF9F6] border border-[#E2DDD5] text-[#7C3AED] font-mono-data text-mono-data font-semibold">
+<span class="w-2 h-2 rounded-full bg-[#7C3AED] animate-pulse"></span>
+<span class="">Deploy In 30 Seconds</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg sm:font-display-xl sm:text-display-xl text-[#0F1117] tracking-tight font-extrabold">
+          Ready to take full control of your digital space?
+        </h2>
+<p class="font-body-lg text-body-lg text-[#525763] max-w-xl mx-auto">
+          Join 45,000+ teams who safeguard their intellectual assets with sovereign zero-knowledge architecture.
+        </p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-space-md pt-4">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#7C3AED] text-white font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] hover:bg-[#6D28D9] hover:shadow-[0_6px_22px_rgba(124,58,237,0.35)] transition-all" href="404.html">
+<span class="">Get Started for Free</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] text-[#0F1117] hover:bg-white hover:border-[#7C3AED] font-label-md text-label-md font-semibold transition-all shadow-sm" href="404.html">
+<span class="material-symbols-outlined text-base text-[#7C3AED]">calendar_month</span>
+<span class="">Schedule Enterprise Demo</span>
+</a>
+</div>
+<p class="font-mono-data text-mono-data text-[#64748B] pt-2">
+          Backed by ISO 27001 &amp; SOC 2 • Zero Data Mining Guarantee
+        </p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Storage Capacity Comparison Interactive Toggle
+  function updateCapacity(tier) {
+    const btnFree = document.getElementById('btn-free');
+    const btnPro = document.getElementById('btn-pro');
+    const btnBiz = document.getElementById('btn-biz');
+
+    const statPhotos = document.getElementById('stat-photos');
+    const descPhotos = document.getElementById('desc-photos');
+    const statVideos = document.getElementById('stat-videos');
+    const descVideos = document.getElementById('desc-videos');
+    const statDocs = document.getElementById('stat-docs');
+    const descDocs = document.getElementById('desc-docs');
+
+    // Reset styles
+    [btnFree, btnPro, btnBiz].forEach(btn => {
+      btn.className = 'px-5 py-2 rounded-lg font-label-md text-label-md text-[#525763] hover:text-[#0F1117] transition';
+    });
+
+    if (tier === 'free') {
+      btnFree.className = 'px-5 py-2 rounded-lg font-label-md text-label-md bg-[#7C3AED] text-white font-semibold transition shadow-[0_2px_10px_rgba(124,58,237,0.25)]';
+      statPhotos.innerText = '1,250';
+      descPhotos.innerText = 'Perfect for personal backups and high-res mobile shots.';
+      statVideos.innerText = '30 min';
+      descVideos.innerText = 'Ample room for daily mobile captures and short clips.';
+      statDocs.innerText = '50,000';
+      descDocs.innerText = 'Store your entire digital library and legal paperwork securely.';
+    } else if (tier === 'pro') {
+      btnPro.className = 'px-5 py-2 rounded-lg font-label-md text-label-md bg-[#7C3AED] text-white font-semibold transition shadow-[0_2px_10px_rgba(124,58,237,0.25)]';
+      statPhotos.innerText = '500,000';
+      descPhotos.innerText = 'Full archival vault for professional photographers and studios.';
+      statVideos.innerText = '12,000 min';
+      descVideos.innerText = 'Hours of cinema ProRes 4K master streams ready at the edge.';
+      statDocs.innerText = '20,000,000';
+      descDocs.innerText = 'Infinite code repositories, vector design bundles, and DB dumps.';
+    } else if (tier === 'biz') {
+      btnBiz.className = 'px-5 py-2 rounded-lg font-label-md text-label-md bg-[#7C3AED] text-white font-semibold transition shadow-[0_2px_10px_rgba(124,58,237,0.25)]';
+      statPhotos.innerText = '1,500,000+';
+      descPhotos.innerText = 'Enterprise-wide digital asset management with zero throttle.';
+      statVideos.innerText = '35,000 min';
+      descVideos.innerText = 'Uncompressed 8K studio reels and VFX composition sequences.';
+      statDocs.innerText = '50,000,000+';
+      descDocs.innerText = 'Complete corporate legal vaults, telemetry histories, and AI sets.';
+    }
+  }
+
+  // FAQ Collapsible Accordion logic
+  function toggleFaq(id) {
+    const elem = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    if (!elem) return;
+
+    if (elem.classList.contains('hidden')) {
+      elem.classList.remove('hidden');
+      if (icon) icon.innerText = 'expand_less';
+    } else {
+      elem.classList.add('hidden');
+      if (icon) icon.innerText = 'expand_more';
+    }
+  }
+</script></main><footer class="w-full bg-[#F2EFE9] border-t border-[#E5DFD4]"><div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl mb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><a href="index.html" class="flex items-center gap-2"><img alt="STACKLY Brand Logo" class="h-8 w-auto object-contain stackly-logo-violet" src="stackly logo.webp"/></a><p class="font-body-md text-body-md text-[#525763] max-w-sm">Your Data. Your Space. Your Control.</p><div class="flex flex-wrap items-center gap-space-xs pt-1"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2DDD5] shadow-sm"><span class="material-symbols-outlined text-sm text-[#7C3AED]">location_on</span><span class="font-label-sm text-label-sm text-[#0F1117] font-semibold">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2DDD5] shadow-sm"><span class="material-symbols-outlined text-sm text-[#7C3AED]">verified_user</span><span class="font-label-sm text-label-sm text-[#0F1117] font-semibold">ISO 27001 &amp; SOC 2</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Product</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Cloud Drive</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Sync Engine</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Enterprise Vault</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Version Control</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">CLI &amp; API</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Solutions</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Startups</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Enterprise</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Creative Studios</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Developers</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Healthcare</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Resources</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Documentation</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">System Status 99.99%</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Security Whitepaper</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Community</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Blog</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Company</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">About Us</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Careers</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="contact-and-support" href="404.html">Contact &amp; Support</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Privacy Policy</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Terms of Service</a></li></ul></div></div><div class="pt-space-md flex flex-col lg:flex-row items-center justify-between gap-space-sm border-t border-[#E5DFD4]"><p class="font-body-sm text-body-sm text-[#64748B] text-center lg:text-left">© 2026 STACKLY. All Rights Reserved. MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008. Cloud Storage | Data Security | Digital Solutions</p><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="font-mono-data text-mono-data text-[#64748B]">All Systems Operational - India South &amp; Global CDNs</span></div></div></div></footer>
+<script src="validation.js"></script>
+</body></html>

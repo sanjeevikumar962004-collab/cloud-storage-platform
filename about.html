@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>STACKLY - Cloud Storage & Technology Solutions</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}.stackly-logo-violet{filter:brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(3475%) hue-rotate(256deg) brightness(98%) contrast(97%);}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#faf9f6",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#5d4201",
+          "secondary-fixed-dim": "#e9c176",
+          "on-background": "#1a1c1a",
+          "on-tertiary-fixed": "#23005c",
+          "surface-dim": "#dbdad7",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#f2f1ee",
+          "secondary-container": "#fed488",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#d2bbff",
+          "surface": "#faf9f6",
+          "secondary-fixed": "#ffdea5",
+          "surface-bright": "#faf9f6",
+          "on-tertiary-fixed-variant": "#5516be",
+          "tertiary": "#5d25c7",
+          "error": "#ba1a1a",
+          "surface-container": "#efeeeb",
+          "outline": "#7b7487",
+          "on-surface-variant": "#4a4455",
+          "tertiary-fixed-dim": "#d0bcff",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed": "#261900",
+          "inverse-primary": "#d2bbff",
+          "inverse-surface": "#2f312f",
+          "surface-variant": "#e3e2e0",
+          "tertiary-fixed": "#e9ddff",
+          "on-secondary-container": "#785a1a",
+          "surface-container-low": "#f4f3f1",
+          "primary": "#630ed4",
+          "on-primary-fixed": "#25005a",
+          "on-surface": "#1a1c1a",
+          "on-tertiary-container": "#ece1ff",
+          "surface-container-high": "#e9e8e5",
+          "on-error-container": "#93000a",
+          "on-tertiary": "#ffffff",
+          "primary-container": "#7c3aed",
+          "surface-tint": "#732ee4",
+          "on-primary-container": "#ede0ff",
+          "tertiary-container": "#7645e0",
+          "surface-container-highest": "#e3e2e0",
+          "secondary": "#775a19",
+          "primary-fixed": "#eaddff",
+          "outline-variant": "#ccc3d8",
+          "on-primary-fixed-variant": "#5a00c6",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin": "2.5rem",
+          "gutter": "1.5rem",
+          "margin-sm": "1.25rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "display-lg": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "code-sm": ["JetBrains Mono"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "mono-data": ["JetBrains Mono"]
+        },
+        "fontSize": {
+          "display-lg": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700"}],
+          "display-xl": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800"}],
+          "display-lg-mobile": ["36px", {lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700"}],
+          "body-lg": ["16px", {lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "400"}],
+          "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}],
+          "headline-xl-mobile": ["28px", {lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600"}],
+          "code-sm": ["12px", {lineHeight: "18px", letterSpacing: "0em", fontWeight: "500"}],
+          "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0em", fontWeight: "400"}],
+          "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "600"}],
+          "headline-xl": ["40px", {lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600"}],
+          "body-sm": ["13px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}],
+          "label-md": ["13px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600"}],
+          "label-sm": ["11px", {lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "600"}],
+          "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "600"}],
+          "mono-data": ["11px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  
+  @media (max-width: 360px) {
+    .h-20 { height: 4rem !important; }
+    .pt-20 { pt-16 !important; }
+    .pt-28 { pt-20 !important; }
+  }
+</style>
+
+
+<style>
+  html {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    scroll-behavior: smooth;
+    height: auto;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  /* Modern accessible styled scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4B5FD;
+    border-radius: 9999px;
+    border: 2px solid #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+  }
+</style>
+
+</head><body class="bg-[#FAF9F6] font-body-md text-body-md text-[#1E212B] antialiased selection:bg-purple-100 selection:text-primary overflow-x-hidden"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E7E2D9] shadow-[0_2px_16px_rgba(0,0,0,0.03)]">
+  <div class="h-16 sm:h-20 max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between gap-2 sm:gap-4">
+    <!-- Brand Logo (No text next to logo) -->
+    <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+      <a class="flex items-center group shrink-0" href="index.html" aria-label="STACKLY Home">
+        <img alt="STACKLY Brand Logo" class="h-7 sm:h-8 md:h-9 w-auto object-contain stackly-logo-violet transition-transform group-hover:scale-105" src="stackly logo.webp"/>
+      </a>
+      <div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F4F1EA] border border-[#E2DDD3]">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shadow-[0_0_6px_rgba(124,58,237,0.5)]"></span>
+        <span class="font-mono-data text-mono-data text-[#64748B] text-xs uppercase tracking-wider font-semibold">v2.4 Enterprise Cloud</span>
+      </div>
+    </div>
+    <!-- Desktop Navigation Links (No Admin, No User Portal) -->
+    <nav class="hidden xl:flex items-center gap-1">
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="index.html">Home</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="feautures.html">Features</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="pricing.html">Pricing</a>
+      <a aria-current="page" class="transition-colors bg-[#F3E8FF] text-primary font-semibold rounded-lg px-3 py-1.5 text-sm" href="about.html">About Us</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="contact.html">Contact & Support</a>
+    </nav>
+    <!-- Right Actions -->
+    <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+      <a class="hidden sm:inline-flex items-center font-label-md text-sm text-[#525763] hover:text-primary px-2.5 py-1.5 transition-colors font-semibold" href="login.html">Sign In</a>
+      <a class="inline-flex items-center justify-center font-label-md text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#7C3AED] text-white hover:bg-[#6D28D9] font-semibold transition-all shadow-[0_4px_14px_rgba(124,58,237,0.25)] whitespace-nowrap" href="signup.html">Start Free</a>
+      <button type="button" onclick="document.getElementById('mobileNavDrawer').classList.toggle('hidden')" class="xl:hidden p-1.5 sm:p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-purple-50 transition" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl leading-none">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Drawer (No Admin, No User Portal) -->
+  <div id="mobileNavDrawer" class="hidden xl:hidden bg-white/95 backdrop-blur-xl border-b border-[#E7E2D9] px-4 py-3 shadow-xl">
+    <div class="flex flex-col gap-1.5">
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="index.html">Home</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="feautures.html">Features</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="pricing.html">Pricing</a>
+      <a class="px-3 py-2 rounded-lg bg-[#F3E8FF] text-primary font-bold text-sm" href="about.html">About Us</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="contact.html">Contact & Support</a>
+      <div class="h-px bg-gray-200 my-1"></div>
+      <div class="flex items-center gap-2 pt-1">
+        <a class="flex-1 text-center py-2 rounded-lg border border-gray-300 text-xs sm:text-sm font-semibold text-gray-700 hover:border-primary" href="login.html">Sign In</a>
+        <a class="flex-1 text-center py-2 rounded-lg bg-[#7C3AED] text-white text-xs sm:text-sm font-semibold shadow" href="signup.html">Start Free</a>
+      </div>
+    </div>
+  </div>
+</header><main class="w-full pt-20 bg-[#FAF9F6]"><div class="flex flex-col w-full">
+<!-- Atmospheric Glow Backdrop (Parent constrained) -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[980px] h-[520px] bg-gradient-to-b from-primary-fixed/30 via-primary-fixed-dim/15 to-transparent blur-3xl pointer-events-none -z-10 rounded-full"></div>
+<!-- 1. HERO SECTION -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 pt-space-lg md:pt-space-xl pb-space-xl">
+<div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-space-md">
+<!-- Sub-badge -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm uppercase tracking-widest shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>OUR ORIGIN & PURPOSE</span>
+</div>
+<!-- Headline -->
+<h1 class="text-2xl sm:text-4xl md:text-display-lg text-on-surface tracking-tight font-extrabold leading-tight">
+          Making Digital Storage Simple, Secure, and Accessible.
+        </h1>
+<!-- Narrative -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Founded in <strong class="text-on-surface font-semibold">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</strong>, STACKLY was built on an unapologetic belief: individuals and enterprises deserve digital sanctuaries. We engineered a sovereign, low-latency, zero-knowledge architecture that guarantees absolute mathematical ownership of your data.
+        </p>
+<!-- CTA Buttons & Live Latency -->
+<div class="flex flex-wrap items-center justify-center gap-space-sm pt-2">
+<a class="inline-flex items-center justify-center font-label-md text-label-md px-6 py-3 rounded-xl bg-primary text-on-primary hover:bg-tertiary shadow-md hover:shadow-xl transition-all font-semibold" href="404.html">
+            Start Free with 20GB
+            <span class="material-symbols-outlined ml-1.5 text-base leading-none">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center font-label-md text-label-md px-6 py-3 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low shadow-sm transition-all font-semibold" href="404.html">
+            Read Our Manifesto
+          </a>
+</div>
+<!-- Latency Micro-pills -->
+<div class="flex flex-wrap items-center justify-center gap-space-xs pt-space-sm">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant shadow-sm text-code-sm font-code-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+<span>IN-SOUTH (Salem DC): <strong class="text-on-surface font-semibold">9.4ms</strong></span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-lowest text-on-surface-variant shadow-sm text-code-sm font-code-sm">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span>Zero-Knowledge AES-256-GCM</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed shadow-sm text-code-sm font-code-sm">
+<span class="material-symbols-outlined text-sm text-secondary">database</span>
+<span>Sovereign Storage Protocol</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. MISSION & STATUS QUO VS STACKLY -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl" id="manifesto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Editorial Manifesto Left -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm uppercase">
+            Architectural Manifesto
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+            We don’t rent you space. We provide cryptographically sealed terrain.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Legacy hyperscalers treat customer files as aggregated telemetry for model ingestion and monetized metadata. STACKLY rejects surveillance tenancy. By combining asynchronous micro-chunking with multi-datacenter shard parity, your data remains unbreakable, uncensorable, and strictly yours.
+          </p>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm space-y-2">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-xl">shield_lock</span>
+<span>Client-Side Key Possession</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Your encryption keys are derived on-device through salted Argon2id. Neither our engineers nor state subpoenas can read a single byte.
+            </p>
+</div>
+</div>
+<!-- High-Contrast Comparison Cards Right -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Legacy Card -->
+<div class="rounded-xl p-space-lg bg-surface-container-high/60 shadow-sm flex flex-col justify-between space-y-space-md">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Legacy Hyperscalers</span>
+<span class="material-symbols-outlined text-error text-xl">cancel</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface pb-space-sm">The Rent-Seeking Cloud</h3>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">remove_circle_outline</span>
+<span>Unencrypted metadata indexing and ad-profiling scans</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">remove_circle_outline</span>
+<span>Opaque egress surcharges taxing data portability</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">remove_circle_outline</span>
+<span>Monolithic server choke points with regional single-point failure</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">remove_circle_outline</span>
+<span>Foreign sovereignty laws overriding your national compliance</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md text-code-sm font-code-sm text-outline">
+              Status: Vulnerable to administrative eavesdropping
+            </div>
+</div>
+<!-- STACKLY Card -->
+<div class="rounded-xl p-space-lg bg-surface-container-lowest shadow-xl flex flex-col justify-between space-y-space-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">STACKLY Protocol</span>
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface pb-space-sm">Zero-Trust Sovereign Vault</h3>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check</span>
+<span>Zero-knowledge client encrypted chunks; strict zero telemetry</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check</span>
+<span>Zero egress penalty — download and stream at full unmetered wire speed</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check</span>
+<span>Asynchronous micro-chunking & Reed-Solomon (8+4) resilience</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-base shrink-0 mt-0.5">check</span>
+<span>Engineered in Salem with sovereign Indian data resident compliance</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-md text-code-sm font-code-sm text-primary font-semibold">
+              Integrity: Certified mathematically immutable
+            </div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. OPERATING DNA / CORE PILLARS (BENTO STYLE) -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Operational Tenets</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">
+          Our Four Non-Negotiable Pillars
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Architecture dictated by ethics, craft, and regional pride.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Pillar 1 -->
+<div class="rounded-xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">enhanced_encryption</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Absolute Privacy First</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Zero-knowledge client-side encryption. We don't possess backdoors, root keys, or indexing crawlers. Your data exists only for your decrypted session.
+            </p>
+</div>
+<div class="pt-space-md">
+<span class="font-code-sm text-code-sm text-primary uppercase font-semibold">Argon2id + AES-256</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="rounded-xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/50 flex items-center justify-center text-on-secondary-fixed mb-space-md">
+<span class="material-symbols-outlined text-2xl">bolt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Radical Engineering Speed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              BGP Anycast routing mesh, NVMe tiering, and micro-chunk sync engines that achieve sub-12ms sync cycles across continents.
+            </p>
+</div>
+<div class="pt-space-md">
+<span class="font-code-sm text-code-sm text-secondary uppercase font-semibold">< 12ms Edge Sync</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="rounded-xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-on-surface mb-space-md">
+<span class="material-symbols-outlined text-2xl">design_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Design Precision</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Industrial tools need not be brutalist or clinical. We craft luminous, human-centric interfaces tuned for mental clarity and effortless flow.
+            </p>
+</div>
+<div class="pt-space-md">
+<span class="font-code-sm text-code-sm text-outline uppercase font-semibold">Kinfolk × Stripe Press</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="rounded-xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-space-md">
+<span class="material-symbols-outlined text-2xl">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Regional Pride & Global Scale</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+              Proudly engineered in Salem, Tamil Nadu; serving forward-thinking teams across 140+ countries without Silicon Valley hegemony.
+            </p>
+</div>
+<div class="pt-space-md">
+<span class="font-code-sm text-code-sm text-primary uppercase font-semibold">Salem to the World</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. TELEMETRY & SCALE METRICS + INNOVATION TIMELINE -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl">
+<div class="p-space-xl rounded-2xl bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-gutter mb-space-xl">
+<!-- Metric 1 -->
+<div class="flex flex-col space-y-1">
+<span class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface font-extrabold tracking-tight">45.2K+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Active Business Teams</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Across fintech, engineering, & creative studios</span>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col space-y-1">
+<span class="font-display-lg text-display-lg-mobile lg:text-display-lg text-primary font-extrabold tracking-tight">18.4 PB</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Protected Sovereign Data</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Zero-loss guarantee with 12x durability replication</span>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col space-y-1">
+<span class="font-display-lg text-display-lg-mobile lg:text-display-lg text-secondary font-extrabold tracking-tight">99.999%</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Enterprise SLA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contractual uptime across primary pods</span>
+</div>
+<!-- Metric 4 -->
+<div class="flex flex-col space-y-1">
+<span class="font-display-lg text-display-lg-mobile lg:text-display-lg text-on-surface font-extrabold tracking-tight">< 12ms</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Global Sync Latency</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Powered by 42 edge PoPs worldwide</span>
+</div>
+</div>
+<!-- Chronological Timeline -->
+<div class="pt-space-lg border-t-0 space-y-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md text-on-surface">Milestones in Sovereign Infrastructure</h3>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">2021 — 2026</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter pt-2">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-code-sm text-code-sm text-secondary font-bold">2021 • Q2</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Conception in Salem</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Two systems engineers build the first asynchronous peer-to-peer chunking engine in a home lab in Salem.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-code-sm text-code-sm text-primary font-bold">2023 • Q1</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Pod-01 Commissioned</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ground broken on STACKLY Pod-01, our flagship 100% solar-backed Tier-4 facility with air-gapped zones.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-code-sm text-code-sm text-secondary font-bold">2024 • Q4</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Zero-Knowledge v2</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rollout of instant sub-chunk hashing algorithm, trimming cloud sync overhead by 73% across 100k users.</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-2">
+<span class="font-code-sm text-code-sm text-primary font-bold">2026 • Present</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Global Enterprise Mesh</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Serving 45,000+ organizations in 140+ countries with regional data sovereignty anchors.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. UNDER THE HOOD: BUILT FOR IRONCLAD RESILIENCY (IMAGE 15) -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Text details -->
+<div class="lg:col-span-5 space-y-space-md order-2 lg:order-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/30 text-on-secondary-fixed text-label-sm font-label-sm uppercase font-semibold">
+<span class="material-symbols-outlined text-sm">dns</span>
+            Physical Infrastructure
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+            Salem Tier-4 Pod-01: Sovereign, Green, and Air-Gapped.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our primary compute and long-term storage facility stands in Salem, Tamil Nadu. Designed from thermal bedrock up, it features 100% dedicated solar and wind power offsets, redundant biometric corridors, and cold air containment aisles monitored 24/7 by our internal infrastructure guild.
+          </p>
+<div class="space-y-space-sm pt-2">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">solar_power</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">100% Renewable Micro-Grid</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Powered via Tamil Nadu's high-yield wind corridors and on-site solar arrays, maintaining a PUE of 1.12.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">vpn_lock</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Physical Air-Gapped Pods</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Enterprise Vault layers are physically isolated from WAN uplinks until signed multi-signature handshakes resolve.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">hub</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">BGP Anycast Low-Hop Mesh</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct cross-connect peering with Tier-1 submarine cable landings at Chennai and Mumbai.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Authentic Datacenter Image Left/Right -->
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+<img alt="STACKLY Tier-4 Datacenter Pod-01 in Salem, Tamil Nadu, showcasing illuminated server racks and precision cooling" class="w-full h-[460px] object-cover group-hover:scale-[1.01] transition-transform duration-500" src="images/datacenter-salem.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-sm text-inverse-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+<span class="font-code-sm text-code-sm uppercase tracking-wider font-semibold">Live Feed: Pod-01 / Aisle 04 Cold Containment</span>
+</div>
+<div class="font-code-sm text-code-sm bg-inverse-surface/70 px-3 py-1 rounded-full backdrop-blur-md">
+                  PUE 1.12 • Salem, TN
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. COLLABORATIVE ENGINEERING CULTURE (IMAGE 13) -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Culture Photo Left -->
+<div class="lg:col-span-7">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl group">
+<img alt="STACKLY distributed systems engineers in Salem headquarters reviewing low-latency pipeline code on ultra-wide monitors" class="w-full h-[460px] object-cover group-hover:scale-[1.01] transition-transform duration-500" src="images/engineers-collab.webp"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/85 via-transparent to-transparent flex flex-col justify-end p-space-lg">
+<div class="flex flex-wrap items-center justify-between gap-space-sm text-inverse-on-surface">
+<div>
+<h4 class="font-headline-sm text-headline-sm font-semibold">Core Sync Engine Guild</h4>
+<p class="font-body-sm text-body-sm text-surface-variant">Daily architectural critique & memory-leak zero tolerance sprint</p>
+</div>
+<span class="font-label-sm text-label-sm px-3 py-1 rounded-full bg-primary text-on-primary">
+                  Salem HQ Lab
+                </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Culture Narrative Right -->
+<div class="lg:col-span-5 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm uppercase font-semibold">
+            People & Philosophy
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+            Builders who obsess over nanoseconds and integrity checksums.
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our team comprises systems programmers, cryptographers, and human interface designers who left conventional enterprise corporations to build software they would entrust with their own life's work.
+          </p>
+<div class="space-y-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl">code</span>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Rust & Zig at Core</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Garbage-collection-free sync daemons ensuring zero stutter on gigabyte uploads.</p>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-2xl">diversity_3</span>
+<div>
+<h5 class="font-headline-sm text-headline-sm text-on-surface">Flat Engineering Council</h5>
+<p class="font-body-sm text-body-sm text-on-surface-variant">No middle management layers; every protocol change is peer-reviewed with cryptographic proofs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. LEADERSHIP & ARCHITECTS -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Leadership</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mt-1">
+          Architects of the Sovereign Cloud
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Guided by seasoned engineers who have built mission-critical distributed systems.
+        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Arunachalam S. -->
+<div class="rounded-2xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center space-y-space-sm">
+<div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of Arunachalam S, Co-Founder and CEO of STACKLY, Indian tech visionary in a crisp dark blazer against a warm neutral linen background, soft directional lighting" src="images/team-arunachalam.webp"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Arunachalam S.</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Co-Founder & CEO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Former distributed systems lead at top Indian telecommunications provider. Alumnus of Government College of Engineering, Salem.
+          </p>
+<div class="pt-2 text-code-sm font-code-sm text-outline">
+            Specialty: Protocol Architecture
+          </div>
+</div>
+<!-- Priyadarshini M. -->
+<div class="rounded-2xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center space-y-space-sm">
+<div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional studio portrait of Priyadarshini M, Co-Founder and CTO of STACKLY, confident female technologist with glasses in modern architectural office setting, warm alabaster tones" src="images/team-priyadarshini.webp"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Priyadarshini M.</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Co-Founder & CTO</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            14 years designing zero-knowledge cryptographic primitives and consensus algorithms for high-throughput global platforms.
+          </p>
+<div class="pt-2 text-code-sm font-code-sm text-outline">
+            Specialty: Cryptographic Primitives
+          </div>
+</div>
+<!-- Vikramaditya R. -->
+<div class="rounded-2xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center space-y-space-sm">
+<div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Vikramaditya R, VP of Engineering at STACKLY, focused engineer in smart casual attire with server room ambient violet reflections in background" src="images/team-vikramaditya.webp"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Vikramaditya R.</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">VP of Engineering</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Specialist in low-level memory optimizations, Linux kernel I/O pipelines, and NVMe-over-Fabrics clustering.
+          </p>
+<div class="pt-2 text-code-sm font-code-sm text-outline">
+            Specialty: Low-Latency Fabric
+          </div>
+</div>
+<!-- Karthik N. -->
+<div class="rounded-2xl p-space-lg bg-surface-container-lowest shadow-sm hover:shadow-lg transition-all flex flex-col items-center text-center space-y-space-sm">
+<div class="w-24 h-24 rounded-full overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of Karthik N, Head of Security at STACKLY, tech security specialist in black mock neck sweater in minimalist modern workspace" src="images/team-karthik.webp"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Karthik N.</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Head of Security</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Former state defense cyber-operations red team director; certified ISO 27001 lead auditor and formal verification expert.
+          </p>
+<div class="pt-2 text-code-sm font-code-sm text-outline">
+            Specialty: Threat Modeling & Pen-Testing
+          </div>
+</div>
+</div>
+</section>
+<!-- 8. THE SALEM ADVANTAGE & REGIONAL FOOTPRINT -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl">
+<div class="rounded-3xl p-space-lg md:p-space-xl bg-surface-container-low shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-6 space-y-space-md">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed text-label-sm font-label-sm uppercase font-semibold">
+<span class="material-symbols-outlined text-sm">hub</span>
+              Regional Industrial Backbone
+            </div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+              The Salem Advantage: Steel Roots, Software Future.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Known for centuries as the steel and mineral fortress of South India, Salem provides STACKLY with an unparalleled strategic geographic shield: high geological tectonic stability, abundant green power corridors, and a fierce culture of rigorous craftsmanship.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-2">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-display-lg text-display-lg-mobile text-primary font-bold">4</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">University Partnerships</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Joint cryptography labs with regional institutes</p>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<span class="font-display-lg text-display-lg-mobile text-secondary font-bold">120+</span>
+<p class="font-headline-sm text-headline-sm text-on-surface mt-1">Local Engineers</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Retaining premier talent in Tamil Nadu</p>
+</div>
+</div>
+</div>
+<!-- Location Map Visualizer -->
+<div class="lg:col-span-6 flex flex-col space-y-space-sm">
+<div class="w-full h-80 rounded-2xl bg-surface-container-highest shadow-md bg-cover bg-center overflow-hidden relative" data-location="MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008" style="background-image: url('images/datacenter-bg.webp')">
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/70 via-transparent to-transparent flex flex-col justify-end p-space-md text-inverse-on-surface">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-xl">pin_drop</span>
+<span class="font-headline-sm text-headline-sm font-semibold">STACKLY Headquarters & Pod-01</span>
+</div>
+<span class="font-code-sm text-code-sm bg-surface-container-lowest/20 backdrop-blur-md px-2.5 py-1 rounded-full text-inverse-on-surface">
+                    11.6643° N, 78.1460° E
+                  </span>
+</div>
+</div>
+</div>
+<!-- Regional Verification Strip -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600">verified</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Data Protection Digital Act (DPDP) Fully Compliant</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline uppercase">Tier-4 Certified Facility</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. FINAL CALL TO ACTION BANNER -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 py-space-xl pb-24">
+<div class="rounded-3xl p-space-xl md:p-20 bg-gradient-to-br from-primary via-tertiary to-primary-container text-on-primary shadow-2xl relative overflow-hidden text-center space-y-space-md">
+<!-- Ambient decorative rings -->
+<div class="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-secondary-fixed/20 blur-2xl pointer-events-none"></div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 text-on-primary text-label-sm font-label-sm uppercase tracking-wider backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span>
+          Ready For True Sovereignty?
+        </div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg font-bold tracking-tight max-w-3xl mx-auto">
+          Join thousands of forward-thinking teams with sovereign cloud storage.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container max-w-xl mx-auto leading-relaxed">
+          Reclaim ownership of your digital assets today. Instant onboarding, transparent pricing, and 20GB free storage forever.
+        </p>
+<div class="flex flex-wrap items-center justify-center gap-space-sm pt-space-sm">
+<a class="inline-flex items-center justify-center font-label-md text-label-md px-8 py-3.5 rounded-xl bg-surface-container-lowest text-on-surface hover:bg-surface-container-low shadow-lg font-bold transition-all" href="404.html">
+            Get Started Now — Free 20GB
+            <span class="material-symbols-outlined ml-1.5 text-base leading-none">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center font-label-md text-label-md px-8 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 text-on-primary border border-white/20 font-semibold backdrop-blur-md transition-all" href="404.html">
+            Schedule Enterprise Briefing
+          </a>
+</div>
+<div class="pt-space-md flex flex-wrap items-center justify-center gap-6 text-on-primary-container text-body-sm font-body-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">check_circle</span> No credit card required
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">check_circle</span> Unlimited download bandwidth
+          </span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">check_circle</span> SOC 2 Type II Audited
+          </span>
+</div>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-[#F2EFE9] border-t border-[#E5DFD4]"><div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl mb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="STACKLY Brand Logo" class="h-8 w-auto object-contain stackly-logo-violet" src="stackly logo.webp"/></div><p class="font-body-md text-body-md text-[#525763] max-w-sm">Your Data. Your Space. Your Control.</p><div class="flex flex-wrap items-center gap-space-xs pt-1"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2DDD5] shadow-sm"><span class="material-symbols-outlined text-sm text-[#7C3AED]">location_on</span><span class="font-label-sm text-label-sm text-[#0F1117] font-semibold">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2DDD5] shadow-sm"><span class="material-symbols-outlined text-sm text-[#7C3AED]">verified_user</span><span class="font-label-sm text-label-sm text-[#0F1117] font-semibold">ISO 27001 & SOC 2</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Product</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Cloud Drive</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Sync Engine</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Enterprise Vault</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Version Control</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">CLI & API</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Solutions</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Startups</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Enterprise</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Creative Studios</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Developers</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Healthcare</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Resources</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Documentation</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">System Status 99.99%</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Security Whitepaper</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Community</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Blog</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Company</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">About Us</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Careers</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="contact-and-support" href="404.html">Contact & Support</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Privacy Policy</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Terms of Service</a></li></ul></div></div><div class="pt-space-md flex flex-col lg:flex-row items-center justify-between gap-space-sm border-t border-[#E5DFD4]"><p class="font-body-sm text-body-sm text-[#64748B] text-center lg:text-left">© 2026 STACKLY. All Rights Reserved. MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008. Cloud Storage | Data Security | Digital Solutions</p><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="font-mono-data text-mono-data text-[#64748B]">All Systems Operational - India South & Global CDNs</span></div></div></div></footer>
+<script src="validation.js"></script>
+</body></html>

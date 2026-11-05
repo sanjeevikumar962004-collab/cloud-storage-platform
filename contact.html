@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>STACKLY - Cloud Storage & Technology Solutions</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}.stackly-logo-violet{filter:brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(3475%) hue-rotate(256deg) brightness(98%) contrast(97%);}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "background": "#faf9f6",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#5d4201",
+          "secondary-fixed-dim": "#e9c176",
+          "on-background": "#1a1c1a",
+          "on-tertiary-fixed": "#23005c",
+          "surface-dim": "#dbdad7",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#f2f1ee",
+          "secondary-container": "#fed488",
+          "on-error": "#ffffff",
+          "primary-fixed-dim": "#d2bbff",
+          "surface": "#faf9f6",
+          "secondary-fixed": "#ffdea5",
+          "surface-bright": "#faf9f6",
+          "on-tertiary-fixed-variant": "#5516be",
+          "tertiary": "#5d25c7",
+          "error": "#ba1a1a",
+          "surface-container": "#efeeeb",
+          "outline": "#7b7487",
+          "on-surface-variant": "#4a4455",
+          "tertiary-fixed-dim": "#d0bcff",
+          "on-secondary": "#ffffff",
+          "on-secondary-fixed": "#261900",
+          "inverse-primary": "#d2bbff",
+          "inverse-surface": "#2f312f",
+          "surface-variant": "#e3e2e0",
+          "tertiary-fixed": "#e9ddff",
+          "on-secondary-container": "#785a1a",
+          "surface-container-low": "#f4f3f1",
+          "primary": "#630ed4",
+          "on-primary-fixed": "#25005a",
+          "on-surface": "#1a1c1a",
+          "on-tertiary-container": "#ece1ff",
+          "surface-container-high": "#e9e8e5",
+          "on-error-container": "#93000a",
+          "on-tertiary": "#ffffff",
+          "primary-container": "#7c3aed",
+          "surface-tint": "#732ee4",
+          "on-primary-container": "#ede0ff",
+          "tertiary-container": "#7645e0",
+          "surface-container-highest": "#e3e2e0",
+          "secondary": "#775a19",
+          "primary-fixed": "#eaddff",
+          "outline-variant": "#ccc3d8",
+          "on-primary-fixed-variant": "#5a00c6",
+          "on-primary": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "space-xs": "0.25rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "margin": "2.5rem",
+          "gutter": "1.5rem",
+          "margin-sm": "1.25rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "display-lg": ["Plus Jakarta Sans"],
+          "display-lg-mobile": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "code-sm": ["JetBrains Mono"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "mono-data": ["JetBrains Mono"]
+        },
+        "fontSize": {
+          "display-lg": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700"}],
+          "display-xl": ["56px", {lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800"}],
+          "display-lg-mobile": ["36px", {lineHeight: "44px", letterSpacing: "-0.025em", fontWeight: "700"}],
+          "body-lg": ["16px", {lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "400"}],
+          "headline-md": ["22px", {lineHeight: "30px", letterSpacing: "-0.01em", fontWeight: "600"}],
+          "headline-xl-mobile": ["28px", {lineHeight: "36px", letterSpacing: "-0.015em", fontWeight: "600"}],
+          "code-sm": ["12px", {lineHeight: "18px", letterSpacing: "0em", fontWeight: "500"}],
+          "body-md": ["14px", {lineHeight: "22px", letterSpacing: "0em", fontWeight: "400"}],
+          "headline-lg": ["30px", {lineHeight: "38px", letterSpacing: "-0.015em", fontWeight: "600"}],
+          "headline-xl": ["40px", {lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "600"}],
+          "body-sm": ["13px", {lineHeight: "20px", letterSpacing: "0em", fontWeight: "400"}],
+          "label-md": ["13px", {lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "600"}],
+          "label-sm": ["11px", {lineHeight: "16px", letterSpacing: "0.03em", fontWeight: "600"}],
+          "headline-sm": ["18px", {lineHeight: "26px", letterSpacing: "-0.005em", fontWeight: "600"}],
+          "mono-data": ["11px", {lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "500"}]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  
+  @media (max-width: 360px) {
+    .h-20 { height: 4rem !important; }
+    .pt-20 { pt-16 !important; }
+    .pt-28 { pt-20 !important; }
+  }
+</style>
+
+
+<style>
+  html {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+    scroll-behavior: smooth;
+    height: auto;
+  }
+  body {
+    overflow-x: hidden;
+    overflow-y: visible !important;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    position: relative;
+  }
+  /* Modern accessible styled scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C4B5FD;
+    border-radius: 9999px;
+    border: 2px solid #FAF9F6;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7C3AED;
+  }
+</style>
+
+</head><body class="bg-[#FAF9F6] font-body-md text-body-md text-[#1E212B] antialiased selection:bg-purple-100 selection:text-primary overflow-x-hidden"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-[#E7E2D9] shadow-[0_2px_16px_rgba(0,0,0,0.03)]">
+  <div class="h-16 sm:h-20 max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 flex items-center justify-between gap-2 sm:gap-4">
+    <!-- Brand Logo (No text next to logo) -->
+    <div class="flex items-center gap-2 sm:gap-4 shrink-0">
+      <a class="flex items-center group shrink-0" href="index.html" aria-label="STACKLY Home">
+        <img alt="STACKLY Brand Logo" class="h-7 sm:h-8 md:h-9 w-auto object-contain stackly-logo-violet transition-transform group-hover:scale-105" src="stackly logo.webp"/>
+      </a>
+      <div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#F4F1EA] border border-[#E2DDD3]">
+        <span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shadow-[0_0_6px_rgba(124,58,237,0.5)]"></span>
+        <span class="font-mono-data text-mono-data text-[#64748B] text-xs uppercase tracking-wider font-semibold">v2.4 Enterprise Cloud</span>
+      </div>
+    </div>
+    <!-- Desktop Navigation Links (No Admin, No User Portal) -->
+    <nav class="hidden xl:flex items-center gap-1">
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="index.html">Home</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="feautures.html">Features</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="pricing.html">Pricing</a>
+      <a class="font-label-md text-sm text-[#525763] hover:text-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-purple-50" href="about.html">About Us</a>
+      <a aria-current="page" class="transition-colors bg-[#F3E8FF] text-primary font-semibold rounded-lg px-3 py-1.5 text-sm" href="contact.html">Contact & Support</a>
+    </nav>
+    <!-- Right Actions -->
+    <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+      <a class="hidden sm:inline-flex items-center font-label-md text-sm text-[#525763] hover:text-primary px-2.5 py-1.5 transition-colors font-semibold" href="login.html">Sign In</a>
+      <a class="inline-flex items-center justify-center font-label-md text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg bg-[#7C3AED] text-white hover:bg-[#6D28D9] font-semibold transition-all shadow-[0_4px_14px_rgba(124,58,237,0.25)] whitespace-nowrap" href="signup.html">Start Free</a>
+      <button type="button" onclick="document.getElementById('mobileNavDrawer').classList.toggle('hidden')" class="xl:hidden p-1.5 sm:p-2 rounded-lg text-gray-600 hover:text-primary hover:bg-purple-50 transition" aria-label="Toggle navigation menu">
+        <span class="material-symbols-outlined text-2xl leading-none">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Drawer (No Admin, No User Portal) -->
+  <div id="mobileNavDrawer" class="hidden xl:hidden bg-white/95 backdrop-blur-xl border-b border-[#E7E2D9] px-4 py-3 shadow-xl">
+    <div class="flex flex-col gap-1.5">
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="index.html">Home</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="feautures.html">Features</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="pricing.html">Pricing</a>
+      <a class="px-3 py-2 rounded-lg text-gray-700 hover:text-primary hover:bg-purple-50 font-medium text-sm" href="about.html">About Us</a>
+      <a class="px-3 py-2 rounded-lg bg-[#F3E8FF] text-primary font-bold text-sm" href="contact.html">Contact & Support</a>
+      <div class="h-px bg-gray-200 my-1"></div>
+      <div class="flex items-center gap-2 pt-1">
+        <a class="flex-1 text-center py-2 rounded-lg border border-gray-300 text-xs sm:text-sm font-semibold text-gray-700 hover:border-primary" href="login.html">Sign In</a>
+        <a class="flex-1 text-center py-2 rounded-lg bg-[#7C3AED] text-white text-xs sm:text-sm font-semibold shadow" href="signup.html">Start Free</a>
+      </div>
+    </div>
+  </div>
+</header><main class="w-full pt-20 bg-[#FAF9F6]"><div class="flex flex-col w-full">
+<!-- Subtle decorative ambient glow behind top section -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[900px] h-[360px] bg-gradient-to-b from-primary-fixed/30 via-tertiary-fixed/20 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<!-- Section 1: Hero & Real-time Operations Pulse -->
+<section class="relative max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 pt-space-xl pb-space-lg">
+<div class="flex flex-col items-start gap-space-md">
+<!-- Live Fleet Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">WE ARE HERE 24/7 • Global SRE & Solutions Fleet</span>
+</div>
+<!-- Headline & Editorial Narrative -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg w-full">
+<div class="max-w-3xl">
+<h1 class="text-2xl sm:text-4xl md:text-display-lg text-on-background tracking-tight font-extrabold leading-tight">We’re Here to Help.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-2 max-w-2xl">
+              Connect directly with our distributed storage architects, protocol engineers, and enterprise security team. We treat mission-critical infrastructure questions with archival precision.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container px-3 py-2 rounded-xl">Node: MAA-SOUTH-1 (Salem HQ)</span>
+</div>
+</div>
+<!-- KPI Bento Bar (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md w-full mt-space-sm">
+<!-- KPI 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between text-primary mb-2">
+<span class="material-symbols-outlined text-headline-md">timer</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed uppercase">P1 • P2 Tier</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold">< 8 min</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Average First Reply SLA</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="material-symbols-outlined text-headline-md">verified</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed uppercase">Verified CSAT</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold">99.4%</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Enterprise Customer Satisfaction</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between text-primary mb-2">
+<span class="material-symbols-outlined text-headline-md">cloud_done</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-on-surface uppercase">Global Mesh</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold">14 / 14</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Storage Clusters Fully Nominal</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-center justify-between text-tertiary mb-2">
+<span class="material-symbols-outlined text-headline-md">key</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed uppercase">Zero-Knowledge</span>
+</div>
+<div>
+<div class="font-headline-xl text-headline-xl text-on-surface font-bold">Zero-Lock</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sovereign Encryption & BYOK</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Priority Dispatch & Direct Desks Grid -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Interactive Dispatch Form (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-md">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Priority Ticket Transmission</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Open an Inquiry Desk</h2>
+</div>
+<span class="font-mono-data text-mono-data text-on-surface-variant bg-surface-container px-2.5 py-1 rounded-md">REF-2026-STK</span>
+</div>
+<form class="flex flex-col gap-space-md" id="contact-form" data-validate="true">
+<!-- Name & Email Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="fullName">Full Name <span class="text-error">*</span></label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="fullName" name="fullname" placeholder="e.g. Dr. Aruna Ramanathan" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="workEmail">Work Email <span class="text-error">*</span></label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="workEmail" name="email" placeholder="aruna@enterprise.in" required="" type="email"/>
+</div>
+</div>
+<!-- Inquiry Classification Chips -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface">Inquiry Classification <span class="text-error">*</span></label>
+<div class="flex flex-wrap gap-2" role="radiogroup">
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="desk_type" type="radio" value="sales"/>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-body-sm font-body-sm bg-surface-container text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container shadow-sm transition-all">
+<span class="material-symbols-outlined text-sm">handshake</span> Sales & Enterprise
+                    </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="desk_type" type="radio" value="tech"/>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-body-sm font-body-sm bg-surface-container text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container shadow-sm transition-all">
+<span class="material-symbols-outlined text-sm">terminal</span> Technical Support
+                    </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="desk_type" type="radio" value="billing"/>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-body-sm font-body-sm bg-surface-container text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container shadow-sm transition-all">
+<span class="material-symbols-outlined text-sm">receipt_long</span> Billing & Invoices
+                    </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="desk_type" type="radio" value="migration"/>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-body-sm font-body-sm bg-surface-container text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container shadow-sm transition-all">
+<span class="material-symbols-outlined text-sm">sync_alt</span> Data Migration
+                    </span>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="desk_type" type="radio" value="partner"/>
+<span class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-body-sm font-body-sm bg-surface-container text-on-surface peer-checked:bg-primary-container peer-checked:text-on-primary-container shadow-sm transition-all">
+<span class="material-symbols-outlined text-sm">hub</span> Solution Partner
+                    </span>
+</label>
+</div>
+</div>
+<!-- Subject Line -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface" for="subjectLine">Subject Line</label>
+<input class="h-11 px-3.5 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="subjectLine" placeholder="e.g. Migration plan for 25TB S3-compatible cluster storage" type="text"/>
+</div>
+<!-- Message Textarea with Markdown Switch -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="messageBox">Detailed Message <span class="text-error">*</span></label>
+<div class="flex items-center gap-1 bg-surface-container p-0.5 rounded-lg">
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-on-surface shadow-xs" id="tab-write" onclick="toggleMarkdown('write')" type="button">Write</button>
+<button class="px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-on-surface" id="tab-preview" onclick="toggleMarkdown('preview')" type="button">Preview</button>
+</div>
+</div>
+<div class="relative" id="write-container">
+<textarea class="w-full p-3.5 rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary shadow-sm font-body-md text-body-md" id="messageBox" placeholder="Describe your architecture, current dataset size, compliance mandates, or technical inquiry..." required="" rows="5"></textarea>
+</div>
+<div class="hidden min-h-[135px] p-3.5 rounded-xl bg-surface-container-low text-on-surface font-body-sm text-body-sm" id="preview-container">
+<p class="text-on-surface-variant italic">Rendered preview will appear here upon typing...</p>
+</div>
+</div>
+<!-- Drag and Drop Attachment Box -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">Diagnostic Logs or Architectural Diagrams (Optional)</span>
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col items-center justify-center gap-2 cursor-pointer hover:bg-surface-container transition-colors text-center" id="dropzone">
+<span class="material-symbols-outlined text-headline-lg text-primary">cloud_upload</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Drop files here or <span class="text-primary underline">browse</span></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Supports .har, .json, .log, .pdf, .png up to 50MB</span>
+</div>
+<input class="hidden" id="fileInput" multiple="" type="file"/>
+<span class="font-code-sm text-code-sm text-primary font-semibold hidden" id="fileSelectedCount"></span>
+</div>
+</div>
+<!-- Agreement Checkbox -->
+<div class="flex items-start gap-3 mt-1">
+<input class="mt-1 h-4 w-4 rounded text-primary focus:ring-primary shadow-sm" id="sla-consent" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface-variant select-none" for="sla-consent">
+                  I agree to ticket logging under STACKLY’s ISO 27001 audited protocols and acknowledge encrypted incident retention under the Digital Personal Data Protection (DPDP) Act 2023.
+                </label>
+</div>
+<!-- Submit Action -->
+<div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">lock</span>
+<span class="font-code-sm text-code-sm">256-bit TLS v1.3 In-Flight Encryption</span>
+</div>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-md transition-all active:scale-[0.99]" type="submit">
+<span>Send Inquiry to STACKLY Team</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<!-- Toast Success Feedback -->
+<div class="hidden mt-space-sm p-4 rounded-xl bg-surface-container text-on-surface flex items-center gap-3" id="successToast">
+<span class="material-symbols-outlined text-primary">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Ticket Transmitted Successfully</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Our engineering triage queue in Salem has acknowledged reference #STK-8841. Response ETA: 8 minutes.</span>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Column: Direct Desks, Active Velocity & Physical HQ (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Direct Desk 1: Enterprise Sales & Solutions -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold tracking-wider uppercase">Direct Desk</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant">Tier-4 Architect</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Enterprise Sales & Custom Deployments</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              For volume pricing past 100TB, sovereign data center geofencing, custom VPC peering, and hybrid cold-tiering agreements.
+            </p>
+<div class="flex flex-col gap-1.5 pt-1">
+<a class="flex items-center gap-2 font-code-sm text-code-sm text-primary hover:underline" href="mailto:enterprise@stackly.in">
+<span class="material-symbols-outlined text-sm">mail</span> enterprise@stackly.in
+              </a>
+<span class="flex items-center gap-2 font-code-sm text-code-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">call</span> +91 (0427) 290-8840 (Direct Desk)
+              </span>
+</div>
+</div>
+<!-- Direct Desk 2: Critical Technical Escalations -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-bold tracking-wider uppercase">24/7 Operations</span>
+<span class="flex items-center gap-1.5 font-code-sm text-code-sm text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span> SRE Active
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Technical Support & P1 Escalations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Round-the-clock storage cluster operations, API authentication failures, CLI synchronization errors, and zero-loss recovery pipelines.
+            </p>
+<div class="flex flex-col gap-1.5 pt-1">
+<a class="flex items-center gap-2 font-code-sm text-code-sm text-primary hover:underline" href="mailto:support@stackly.in">
+<span class="material-symbols-outlined text-sm">mail</span> support@stackly.in
+              </a>
+<span class="flex items-center gap-2 font-code-sm text-code-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">emergency</span> P1 Urgent Line for Dedicated Vault Clients
+              </span>
+</div>
+</div>
+<!-- Response Velocity Gauge Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wider">Live Response Velocity</span>
+<span class="font-mono-data text-mono-data text-primary font-bold">OPTIMAL</span>
+</div>
+<!-- Custom Inline SVG Velocity Gauge -->
+<div class="flex items-center gap-4">
+<svg class="w-16 h-16 shrink-0 -rotate-90" viewbox="0 0 36 36">
+<!-- Background Circle -->
+<circle class="text-surface-container-high" cx="18" cy="18" fill="none" r="15.915" stroke="currentColor" stroke-width="3"></circle>
+<!-- Dash Value Circle: 92% -->
+<circle class="text-primary" cx="18" cy="18" fill="none" r="15.915" stroke="currentColor" stroke-dasharray="92, 100" stroke-linecap="round" stroke-width="3.2"></circle>
+</svg>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">5 min 42 sec</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Rolling 60-minute average response time across worldwide dispatch queues.</span>
+</div>
+</div>
+</div>
+<!-- Physical Global Headquarters Card with Interactive Map Asset -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-sm">apartment</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wider">Global Headquarters</span>
+</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant">IST (UTC +5:30)</span>
+</div>
+<div class="flex flex-col gap-1.5">
+  <span class="font-label-md text-label-md text-on-surface font-bold text-base">STACKLY Technologies Private Limited</span>
+  <div class="flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm">
+    <span class="material-symbols-outlined text-base text-[#7C3AED] shrink-0 mt-0.5">location_on</span>
+    <span class="font-medium text-[#0F1117]">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span>
+  </div>
+</div>
+<!-- Interactive Google Map Embed -->
+<div class="w-full h-72 sm:h-80 rounded-2xl overflow-hidden shadow-md border border-[#E7E2DA] relative mt-2 bg-gray-100">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616098770814!2d78.17140487537195!3d11.68295658852614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1793855570910!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SECTION: INTERACTIVE HEADQUARTERS MAP -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 py-space-md">
+  <div class="rounded-3xl p-6 sm:p-8 md:p-10 bg-white border border-[#E7E2DA] shadow-sm space-y-6">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 border border-purple-200 text-[#7C3AED] text-xs font-bold font-mono uppercase tracking-wider mb-2">
+          <i class="fa-solid fa-map-location-dot"></i> Salem Flagship Technology Facility
+        </div>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-[#0F1117] tracking-tight">Visit Our Global Headquarters</h3>
+        <p class="text-sm text-gray-500 max-w-xl mt-1">
+          MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008
+        </p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://maps.google.com/?q=Stackly+Salem" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-xs font-bold shadow transition">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps
+        </a>
+      </div>
+    </div>
+    <!-- Responsive Google Map Frame -->
+    <div class="w-full h-80 sm:h-96 md:h-[450px] rounded-2xl overflow-hidden shadow-inner border border-[#E7E2DA] relative">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616098770814!2d78.17140487537195!3d11.68295658852614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1793855570910!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Support Channels & Knowledge Base Grid -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 py-space-lg">
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Architectural Self-Service</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Explore Technical Channels & Documentation</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Everything from CLI syntax and API authentication to real-time cluster telemetry and high-concurrency S3 migration tutorials.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Channel 1: Documentation & API -->
+<a class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group" href="404.html">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-headline-sm">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Documentation & API</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              140+ exhaustive guides covering REST endpoints, Rust & Python SDKs, and granular S3 access policies.
+            </p>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary pt-space-md">
+<span>Read Docs</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Channel 2: Community Discord -->
+<a class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group" href="404.html">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-headline-sm">forum</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Developer Community</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Join 12,000+ engineers discussing distributed storage, decentralized vaulting, and open protocols on Discord.
+            </p>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary pt-space-md">
+<span>Join Discord</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Channel 3: Real-Time Cluster Health Monitor -->
+<a class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group" href="404.html">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-headline-sm">monitoring</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Cluster Health Status</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Real-time uptime metrics, ingress throughput counters, and scheduled maintenance bulletins across 14 zones.
+            </p>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary pt-space-md">
+<span>View Status Dashboard</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+<!-- Channel 4: Migration Tutorials & Video Walkthroughs -->
+<a class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all flex flex-col justify-between group" href="404.html">
+<div class="flex flex-col gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-headline-sm">play_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Migration Tutorials</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Step-by-step video blueprints for zero-downtime batch synchronization using STACKLY Sync CLI and rclone.
+            </p>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary pt-space-md">
+<span>Watch Tutorials</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Section 4: Common Technical Questions (FAQ Accordion) -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 py-space-xl">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-lg">
+<div class="text-center flex flex-col items-center gap-2">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Enterprise Answers</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Clear responses to common architecture, compliance, billing, and migration queries.
+          </p>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-accordion">
+<!-- FAQ Item 1 -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-lg flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleFaq('faq-1')" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">How does STACKLY handle multi-terabyte data migration from Dropbox or Google Drive?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md" id="faq-1">
+<p>
+                We provide the <code>stackly-sync</code> daemon with native OAuth 2.0 pipelines directly into Google Workspace, Dropbox Business, and AWS S3. For migrations exceeding 10TB, our dedicated Solutions Engineering team in Salem provisions parallel bandwidth pipelines that mirror your metadata tree, deduplicate block hashes, and checksum verify each block with SHA-256 before cutting over—ensuring zero operational downtime for active users.
+              </p>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-lg flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleFaq('faq-2')" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">Can our enterprise bring our own encryption keys (BYOK) or plug into AWS KMS / HashiCorp Vault?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md" id="faq-2">
+<p>
+                Yes. Under our Sovereign Security architecture, STACKLY supports PKCS#11 compliant HSM integrations, HashiCorp Vault, AWS KMS, and Google Cloud KMS. Your master encryption keys never touch STACKLY application memory in plaintext. Data envelopes are encrypted client-side prior to transit, making your storage mathematically inaccessible even under administrative subpoena.
+              </p>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-lg flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleFaq('faq-3')" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">What payment rails are accepted? Do you support GST invoices and Indian UPI?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md" id="faq-3">
+<p>
+                All Indian accounts receive compliant GST input tax credit invoices with HSN code 998315. We natively accept UPI (AutoPay), NetBanking (all Tier-1 & Tier-2 Indian banks), RuPay, Visa, and Mastercard corporate cards. For international enterprises, we invoice in USD/EUR via Stripe Wire Transfer with automated reverse-charge tax credits.
+              </p>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden transition-all">
+<button class="w-full p-space-lg flex items-center justify-between text-left hover:bg-surface-container-low transition-colors" onclick="toggleFaq('faq-4')" type="button">
+<span class="font-headline-sm text-headline-sm text-on-surface pr-4">How does STACKLY comply with India’s Digital Personal Data Protection (DPDP) Act 2023?</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-200" id="faq-4-icon">expand_more</span>
+</button>
+<div class="hidden px-space-lg pb-space-lg text-on-surface-variant font-body-md text-body-md" id="faq-4">
+<p>
+                STACKLY operates primary storage nodes physically pinned within Indian sovereign territory (Chennai, Mumbai, and Bengaluru clusters). Data principals retain explicit right-to-erasure and verifiable cryptographic provenance. Our ISO 27001 and SOC 2 Type II audit attestations include detailed DPDP fiduciary compliance checklists available to Enterprise customers upon NDA signing.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Dedicated Escalation Callout Banner -->
+<section class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 pb-space-xl">
+<div class="relative rounded-2xl bg-gradient-to-r from-primary to-tertiary p-space-xl text-on-primary overflow-hidden shadow-xl">
+<!-- Subtle architectural pattern background -->
+<div class="absolute -right-10 -bottom-10 w-96 h-96 rounded-full bg-white/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="max-w-2xl flex flex-col gap-2">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-md w-fit">
+<span class="material-symbols-outlined text-sm text-secondary-fixed">bolt</span>
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-white">White-Glove Tier</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-white font-bold">Need a Dedicated Slack Connect Channel or Immediate Escalation?</h2>
+<p class="font-body-lg text-body-lg text-white/90">
+              Enterprise accounts get direct, bi-directional channels into our engineering fleet with sub-15 minute SLAs and assigned Solutions Directors.
+            </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm shrink-0">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface transition-colors shadow-sm font-semibold" onclick="alert('Dedicated Slack Connect request received. A link will be sent to your work email.')" type="button">
+<span class="material-symbols-outlined text-primary text-sm">hub</span>
+<span>Request Slack Connect</span>
+</button>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-label-md text-label-md backdrop-blur-md transition-colors font-semibold" href="tel:+914272908840">
+<span class="material-symbols-outlined text-sm">phone_in_talk</span>
+<span>Call Priority Desk</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple interactive accordion handler
+  function toggleFaq(id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById(id + '-icon');
+    if (!el) return;
+    
+    const isHidden = el.classList.contains('hidden');
+    // Close other FAQs
+    const allPanels = document.querySelectorAll('#faq-accordion > div > div:nth-child(2)');
+    const allIcons = document.querySelectorAll('#faq-accordion span[id$="-icon"]');
+    allPanels.forEach(p => p.classList.add('hidden'));
+    allIcons.forEach(i => i.classList.remove('rotate-180'));
+
+    if (isHidden) {
+      el.classList.remove('hidden');
+      if (icon) icon.classList.add('rotate-180');
+    }
+  }
+
+  // Markdown write/preview tab toggle
+  function toggleMarkdown(mode) {
+    const writeBtn = document.getElementById('tab-write');
+    const previewBtn = document.getElementById('tab-preview');
+    const writeContainer = document.getElementById('write-container');
+    const previewContainer = document.getElementById('preview-container');
+    const messageBox = document.getElementById('messageBox');
+
+    if (mode === 'write') {
+      writeBtn.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-on-surface shadow-xs";
+      previewBtn.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-on-surface";
+      writeContainer.classList.remove('hidden');
+      previewContainer.classList.add('hidden');
+    } else {
+      previewBtn.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-on-surface shadow-xs";
+      writeBtn.className = "px-2.5 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:text-on-surface";
+      writeContainer.classList.add('hidden');
+      previewContainer.classList.remove('hidden');
+      
+      const content = messageBox.value.trim();
+      previewContainer.textContent = content ? content : "No message text entered yet.";
+    }
+  }
+
+  // File dropzone click trigger & file feedback
+  const dropzone = document.getElementById('dropzone');
+  const fileInput = document.getElementById('fileInput');
+  const fileSelectedCount = document.getElementById('fileSelectedCount');
+
+  if (dropzone && fileInput) {
+    dropzone.addEventListener('click', () => fileInput.click());
+    fileInput.addEventListener('change', () => {
+      if (fileInput.files && fileInput.files.length > 0) {
+        fileSelectedCount.classList.remove('hidden');
+        fileSelectedCount.textContent = `${fileInput.files.length} file(s) queued for transmission`;
+      }
+    });
+  }
+
+  // Form submission feedback
+  function showSuccessToast() {
+    const toast = document.getElementById('successToast');
+    if (toast) {
+      toast.classList.remove('hidden');
+      toast.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+</script></main><footer class="w-full bg-[#F2EFE9] border-t border-[#E5DFD4]"><div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl mb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="STACKLY Brand Logo" class="h-8 w-auto object-contain stackly-logo-violet" src="stackly logo.webp"/></div><p class="font-body-md text-body-md text-[#525763] max-w-sm">Your Data. Your Space. Your Control.</p><div class="flex flex-wrap items-center gap-space-xs pt-1"><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2DDD5] shadow-sm"><span class="material-symbols-outlined text-sm text-[#7C3AED]">location_on</span><span class="font-label-sm text-label-sm text-[#0F1117] font-semibold">MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008</span></div><div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#E2DDD5] shadow-sm"><span class="material-symbols-outlined text-sm text-[#7C3AED]">verified_user</span><span class="font-label-sm text-label-sm text-[#0F1117] font-semibold">ISO 27001 & SOC 2</span></div></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Product</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Cloud Drive</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Sync Engine</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Enterprise Vault</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Version Control</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">CLI & API</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Solutions</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Startups</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Enterprise</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Creative Studios</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Developers</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="features" href="404.html">Healthcare</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Resources</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Documentation</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">System Status 99.99%</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Security Whitepaper</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Community</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="resources" href="404.html">Blog</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-[#0F1117] uppercase tracking-wider font-bold">Company</span><ul class="flex flex-col gap-2 font-body-sm text-body-sm"><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">About Us</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Careers</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="contact-and-support" href="404.html">Contact & Support</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Privacy Policy</a></li><li class=""><a class="text-[#525763] hover:text-[#7C3AED] transition-colors" data-path="about-us" href="404.html">Terms of Service</a></li></ul></div></div><div class="pt-space-md flex flex-col lg:flex-row items-center justify-between gap-space-sm border-t border-[#E5DFD4]"><p class="font-body-sm text-body-sm text-[#64748B] text-center lg:text-left">© 2026 STACKLY. All Rights Reserved. MMR Complex, Periyakollappatty, Chinna Thirupathi, Salem, Tamil Nadu 636008. Cloud Storage | Data Security | Digital Solutions</p><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500"></span><span class="font-mono-data text-mono-data text-[#64748B]">All Systems Operational - India South & Global CDNs</span></div></div></div></footer>
+<script src="validation.js"></script>
+</body></html>
