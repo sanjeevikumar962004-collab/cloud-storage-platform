@@ -205,7 +205,7 @@
 <div class="pointer-events-none absolute top-48 -right-36 w-[480px] h-[480px] rounded-full bg-[#DDD6FE]/35 blur-[140px]"></div>
 <div class="max-w-[1440px] mx-auto px-3 sm:px-6 md:px-8 lg:px-12 flex flex-col items-center text-center relative z-10">
 <!-- Announcement Pill -->
-<a class="group inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 border border-[#E5DFD4] backdrop-blur-md shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-primary/50 hover:shadow-md mb-space-lg" href="404.html">
+<a class="group inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/90 border border-[#E5DFD4] backdrop-blur-md shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300 hover:border-primary/50 hover:shadow-md mb-space-lg" href="signup.html">
 <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#F3E8FF] text-[#7C3AED]">
 <span class="material-symbols-outlined text-sm">bolt</span>
 </span>
@@ -225,7 +225,7 @@
       </p>
 <!-- CTAs -->
 <div class="flex flex-col sm:flex-row items-center gap-space-md mb-space-lg">
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-[#7C3AED] text-white font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all hover:bg-[#6D28D9] hover:shadow-[0_6px_20px_rgba(124,58,237,0.35)]" href="404.html">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-[#7C3AED] text-white font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition-all hover:bg-[#6D28D9] hover:shadow-[0_6px_20px_rgba(124,58,237,0.35)]" href="signup.html">
 <span class="">Start for Free</span>
 <span class="material-symbols-outlined text-base">chevron_right</span>
 </a>
@@ -279,21 +279,27 @@
 <!-- Window Top Bar -->
 <div class="h-10 sm:h-11 px-2.5 sm:px-4 bg-[#F8F7F4] border-b border-[#EAE6DF] flex items-center justify-between gap-2 overflow-hidden">
 <div class="flex items-center gap-1.5 sm:gap-2 min-w-0">
+<a href="signup.html" class="flex items-center gap-1.5 shrink-0" title="Window Controls">
 <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#EF4444]/80 shrink-0"></span>
 <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#F59E0B]/80 shrink-0"></span>
 <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#10B981]/90 shadow-[0_0_6px_rgba(16,185,129,0.4)] shrink-0"></span>
-<span class="font-mono-data text-[10px] sm:text-mono-data text-[#525763] ml-1 sm:ml-2.5 flex items-center gap-1 truncate">
+</a>
+<a href="contact.html" class="font-mono-data text-[10px] sm:text-mono-data text-[#525763] hover:text-[#7C3AED] transition ml-1 sm:ml-2.5 flex items-center gap-1 truncate" title="S3 Cloud Vault URI">
 <span class="material-symbols-outlined text-xs text-[#7C3AED] shrink-0">lock</span>
 <span class="truncate">stackly-vault://corp.primary.cloud</span>
-</span>
+</a>
 </div>
 <div class="flex items-center gap-2 shrink-0">
-<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#F3E8FF] border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data font-semibold whitespace-nowrap">
+<a href="signup.html" class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#F3E8FF] hover:bg-purple-100 border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data font-semibold whitespace-nowrap transition">
 <span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-ping shrink-0"></span>
 <span class="hidden xs:inline">Edge:</span> IN-MAA
-</span>
-<span class="hidden md:inline material-symbols-outlined text-sm text-[#64748B] hover:text-[#0F1117] transition-colors cursor-pointer">tune</span>
-<span class="hidden md:inline material-symbols-outlined text-sm text-[#64748B] hover:text-[#0F1117] transition-colors cursor-pointer">splitscreen</span>
+</a>
+<a href="contact.html" class="hidden md:inline-flex items-center text-[#64748B] hover:text-[#0F1117] transition-colors" title="Tune Configuration">
+<span class="material-symbols-outlined text-sm">tune</span>
+</a>
+<a href="404.html" class="hidden md:inline-flex items-center text-[#64748B] hover:text-[#0F1117] transition-colors" title="Split Screen View">
+<span class="material-symbols-outlined text-sm">splitscreen</span>
+</a>
 </div>
 </div>
 <!-- Dashboard Layout Grid -->
@@ -302,41 +308,41 @@
 <div class="lg:col-span-3 bg-[#FAF9F6] border-b lg:border-b-0 lg:border-r border-[#EAE6DF] p-3 sm:p-4 flex flex-col justify-between gap-4">
 <div class="space-y-3 sm:space-y-4">
 <!-- Quick Actions -->
-<button class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-[#7C3AED] text-white font-label-md text-xs sm:text-label-md font-semibold shadow-[0_4px_12px_rgba(124,58,237,0.2)] transition hover:bg-[#6D28D9]">
+<a href="404.html" class="w-full flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-[#7C3AED] text-white font-label-md text-xs sm:text-label-md font-semibold shadow-[0_4px_12px_rgba(124,58,237,0.2)] transition hover:bg-[#6D28D9]">
 <span class="material-symbols-outlined text-base">cloud_upload</span>
 <span class="">Upload New Object</span>
-</button>
+</a>
 <!-- Navigation Folders -->
 <nav class="space-y-1">
-<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg bg-white text-[#0F1117] font-label-md text-xs sm:text-label-md border-l-2 border-[#7C3AED] shadow-sm">
+<a href="404.html" class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg bg-white text-[#0F1117] font-label-md text-xs sm:text-label-md border-l-2 border-[#7C3AED] shadow-sm hover:text-primary transition">
 <span class="material-symbols-outlined text-base text-[#7C3AED]">folder_open</span>
 <span class="flex-1 text-left font-semibold">My Cloud</span>
 <span class="font-mono-data text-[10px] sm:text-mono-data text-[#7C3AED] bg-[#F3E8FF] px-1.5 py-0.5 rounded">1,842</span>
-</button>
-<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+</a>
+<a href="404.html" class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
 <span class="material-symbols-outlined text-base">group</span>
 <span class="flex-1 text-left truncate">Shared with Team</span>
 <span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B]">42</span>
-</button>
-<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+</a>
+<a href="404.html" class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
 <span class="material-symbols-outlined text-base text-[#B45309]">encrypted</span>
 <span class="flex-1 text-left truncate">Encrypted Vault</span>
 <span class="px-1.5 py-0.5 rounded text-[10px] bg-[#FEF3C7] text-[#92400E] font-mono-data font-semibold">E2EE</span>
-</button>
-<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+</a>
+<a href="404.html" class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
 <span class="material-symbols-outlined text-base">history</span>
 <span class="flex-1 text-left truncate">Recent Files</span>
-</button>
-<button class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
+</a>
+<a href="404.html" class="w-full flex items-center gap-2 px-2.5 py-1.5 sm:py-2 rounded-lg text-[#525763] hover:bg-[#F2EFE9] hover:text-[#0F1117] font-label-md text-xs sm:text-label-md transition">
 <span class="material-symbols-outlined text-base">delete_outline</span>
 <span class="flex-1 text-left truncate">Trash</span>
-</button>
+</a>
 </nav>
 </div>
 <!-- Storage Quota Widget -->
-<div class="p-3 rounded-lg bg-white border border-[#EAE6DF] space-y-2 shadow-sm">
+<a href="404.html" class="block p-3 rounded-lg bg-white border border-[#EAE6DF] space-y-2 shadow-sm hover:border-[#7C3AED]/50 transition group cursor-pointer" title="View Storage Quota">
 <div class="flex items-center justify-between text-[11px] sm:text-label-sm font-label-sm">
-<span class="text-[#0F1117] font-medium">Storage Capacity</span>
+<span class="text-[#0F1117] group-hover:text-primary transition font-medium">Storage Capacity</span>
 <span class="text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data font-semibold">3.2% Used</span>
 </div>
 <div class="w-full h-2 rounded-full bg-[#F2EFE9] overflow-hidden">
@@ -346,7 +352,7 @@
 <span class="">64.2 GB used</span>
 <span class="">2,000 GB</span>
 </div>
-</div>
+</a>
 </div>
 <!-- Main Explorer Canvas -->
 <div class="lg:col-span-9 bg-white p-2.5 sm:p-4 lg:p-6 flex flex-col justify-between max-w-full overflow-hidden">
@@ -355,61 +361,61 @@
 <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-3">
 <div class="relative flex-1 w-full max-w-md">
 <span class="material-symbols-outlined absolute left-3 top-2.5 text-base text-[#94A3B8]">search</span>
-<input class="w-full pl-9 pr-3 py-1.5 sm:py-2 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] text-[#0F1117] text-xs sm:text-body-sm placeholder:text-[#94A3B8] focus:outline-none focus:border-[#7C3AED] focus:bg-white" placeholder="Search filenames, tags, hash, metadata..." type="text"/>
+<input onkeydown="if(event.key==='Enter'){event.preventDefault();window.location.href='404.html';}" class="w-full pl-9 pr-3 py-1.5 sm:py-2 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] text-[#0F1117] text-xs sm:text-body-sm placeholder:text-[#94A3B8] focus:outline-none focus:border-[#7C3AED] focus:bg-white" placeholder="Search filenames, tags, hash, metadata... (Press Enter)" type="text"/>
 </div>
 <!-- Category Tags -->
 <div class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none max-w-full">
-<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#7C3AED] text-white font-semibold text-[11px] sm:text-label-sm whitespace-nowrap shadow-sm">All</button>
-<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">Documents</button>
-<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">Design Systems</button>
-<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">CAD &amp; 3D</button>
-<button class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap">Video Assets</button>
+<a href="404.html" class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#7C3AED] text-white font-semibold text-[11px] sm:text-label-sm whitespace-nowrap shadow-sm hover:bg-[#6D28D9] transition">All</a>
+<a href="404.html" class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap transition">Documents</a>
+<a href="404.html" class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap transition">Design Systems</a>
+<a href="404.html" class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap transition">CAD &amp; 3D</a>
+<a href="404.html" class="px-2.5 sm:px-3 py-1 rounded-lg bg-[#F5F2EB] border border-[#E5DFD4] text-[#525763] hover:text-[#0F1117] hover:bg-[#EFEAE0] text-[11px] sm:text-label-sm whitespace-nowrap transition">Video Assets</a>
 </div>
 </div>
 <!-- Drag & Drop Instant Zone -->
-<div class="p-2.5 sm:p-4 rounded-xl bg-[#FAF9F6] border border-dashed border-[#D6CEC2] hover:border-primary flex items-center justify-start sm:justify-center gap-2 sm:gap-3 text-left transition duration-200 hover:bg-[#F6F2EA] cursor-pointer">
-<div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#F3E8FF] flex items-center justify-center text-[#7C3AED] shrink-0">
+<a href="404.html" class="block p-2.5 sm:p-4 rounded-xl bg-[#FAF9F6] border border-dashed border-[#D6CEC2] hover:border-primary flex items-center justify-start sm:justify-center gap-2 sm:gap-3 text-left transition duration-200 hover:bg-[#F6F2EA] cursor-pointer group">
+<div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#F3E8FF] group-hover:bg-[#E9D5FF] flex items-center justify-center text-[#7C3AED] shrink-0 transition">
 <span class="material-symbols-outlined text-base sm:text-lg">upload_file</span>
 </div>
 <div class="min-w-0 flex-1">
-<p class="font-label-md text-xs sm:text-label-md text-[#0F1117] font-medium truncate">Drop files to instantly encrypt &amp; sync</p>
+<p class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition font-medium truncate">Drop files to instantly encrypt &amp; sync</p>
 <p class="text-[10px] sm:text-body-sm text-[#64748B] truncate">Zero-knowledge client-side encryption applied automatically</p>
 </div>
-</div>
+</a>
 <!-- Interactive File Cards Grid -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5 sm:gap-3 w-full">
 <!-- File Item 1 -->
-<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
-<div class="flex items-center justify-between gap-2">
+<a href="404.html" class="block p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group cursor-pointer" title="View Q4_Financial_Audit_2026.pdf">
+<div class="flex items-center justify-between gap-2 min-w-0">
 <div class="flex items-center gap-2 min-w-0 flex-1">
 <div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-red-50 text-red-600 flex items-center justify-center border border-red-100 shrink-0">
 <span class="material-symbols-outlined text-base sm:text-lg">picture_as_pdf</span>
 </div>
 <div class="min-w-0 flex-1">
-<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Q4_Financial_Audit_2026.pdf">Q4_Financial_Audit_2026.pdf</h4>
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold">Q4_Financial_Audit_2026.pdf</h4>
 <span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">14.2 MB • Synced 2m ago</span>
 </div>
 </div>
-<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F8F7F4] border border-[#E5DFD4] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data flex items-center gap-1 font-semibold shrink-0 whitespace-nowrap">
+<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F8F7F4] border border-[#E5DFD4] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data flex items-center gap-1 font-semibold shrink-0">
 <span class="material-symbols-outlined text-xs">verified</span> AES-256
 </span>
 </div>
-<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
-<span class="text-emerald-600 flex items-center gap-1 font-medium whitespace-nowrap">
+<div class="flex items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="text-emerald-600 flex items-center gap-1 font-medium whitespace-nowrap truncate min-w-0">
 <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 shrink-0"></span> Verifiably Synced
 </span>
-<span class="whitespace-nowrap">Checksum: 9c8f...110b</span>
+<span class="whitespace-nowrap shrink-0 text-right">Checksum: 9c8f...</span>
 </div>
-</div>
+</a>
 <!-- File Item 2 -->
-<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
-<div class="flex items-center justify-between gap-2">
+<a href="404.html" class="block p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group cursor-pointer" title="View Brand_Identity_3D_Master.blend">
+<div class="flex items-center justify-between gap-2 min-w-0">
 <div class="flex items-center gap-2 min-w-0 flex-1">
 <div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-amber-50 text-amber-700 flex items-center justify-center border border-amber-100 shrink-0">
 <span class="material-symbols-outlined text-base sm:text-lg">view_in_ar</span>
 </div>
 <div class="min-w-0 flex-1">
-<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Brand_Identity_3D_Master.blend">Brand_Identity_3D_Master.blend</h4>
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold">Brand_Identity_3D_Master.blend</h4>
 <span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">480.0 MB • Shared with 8</span>
 </div>
 </div>
@@ -419,74 +425,74 @@
 <span class="w-5 h-5 rounded-full bg-[#F5F2EB] border border-[#E2DDD5] flex items-center justify-center text-[9px] text-[#525763] font-semibold">+6</span>
 </div>
 </div>
-<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
-<span class="text-[#7C3AED] flex items-center gap-1 font-medium whitespace-nowrap">
+<div class="flex items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="text-[#7C3AED] flex items-center gap-1 font-medium whitespace-nowrap truncate min-w-0">
 <span class="material-symbols-outlined text-xs">group</span> Collaborative Lock
 </span>
-<span class="whitespace-nowrap">Version 4.2</span>
+<span class="whitespace-nowrap shrink-0 text-right">Version 4.2</span>
 </div>
-</div>
+</a>
 <!-- File Item 3 -->
-<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
-<div class="flex items-center justify-between gap-2">
+<a href="404.html" class="block p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group cursor-pointer" title="View Stackly_Mobile_Design_System.fig">
+<div class="flex items-center justify-between gap-2 min-w-0">
 <div class="flex items-center gap-2 min-w-0 flex-1">
 <div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-[#F3E8FF] text-[#7C3AED] flex items-center justify-center border border-[#E9D5FF] shrink-0">
 <span class="material-symbols-outlined text-base sm:text-lg">design_services</span>
 </div>
 <div class="min-w-0 flex-1">
-<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Stackly_Mobile_Design_System.fig">Stackly_Mobile_Design_System.fig</h4>
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold">Stackly_Mobile_Design_System.fig</h4>
 <span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">82.4 MB • Delta Streaming</span>
 </div>
 </div>
-<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F3E8FF] border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data flex items-center gap-1 font-semibold shrink-0 whitespace-nowrap">
+<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F3E8FF] border border-[#E9D5FF] text-[#7C3AED] font-mono-data text-[10px] sm:text-mono-data flex items-center gap-1 font-semibold shrink-0">
 <span class="w-1.5 h-1.5 rounded-full bg-[#7C3AED] animate-pulse"></span> Streaming
 </span>
 </div>
-<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
-<span class="whitespace-nowrap">Active Edits: 3 Designers</span>
-<span class="text-[#7C3AED] font-semibold whitespace-nowrap">0.4ms ping</span>
+<div class="flex items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="whitespace-nowrap truncate min-w-0">Active: 3 Designers</span>
+<span class="text-[#7C3AED] font-semibold whitespace-nowrap shrink-0 text-right">0.4ms ping</span>
 </div>
-</div>
+</a>
 <!-- File Item 4 -->
-<div class="p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group overflow-hidden">
-<div class="flex items-center justify-between gap-2">
+<a href="404.html" class="block p-2.5 sm:p-3.5 rounded-lg bg-white border border-[#EAE6DF] hover:border-primary/40 hover:shadow-md transition shadow-[0_2px_8px_rgba(0,0,0,0.02)] space-y-2 group cursor-pointer" title="View Salem_DataCenter_Cluster_Telemetry.json">
+<div class="flex items-center justify-between gap-2 min-w-0">
 <div class="flex items-center gap-2 min-w-0 flex-1">
 <div class="w-8 h-8 sm:w-9 sm:h-9 rounded bg-[#F8F7F4] border border-[#E2DDD5] text-[#525763] flex items-center justify-center shrink-0">
 <span class="material-symbols-outlined text-base sm:text-lg">data_object</span>
 </div>
 <div class="min-w-0 flex-1">
-<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold" title="Salem_DataCenter_Cluster_Telemetry.json">Salem_DataCenter_Cluster_Telemetry.json</h4>
+<h4 class="font-label-md text-xs sm:text-label-md text-[#0F1117] group-hover:text-primary transition truncate font-semibold">Salem_DataCenter_Cluster_Telemetry.json</h4>
 <span class="font-mono-data text-[10px] sm:text-mono-data text-[#64748B] truncate block">2.4 MB • Continuous Sync</span>
 </div>
 </div>
-<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F8F7F4] text-[#525763] font-mono-data text-[10px] sm:text-mono-data border border-[#E2DDD5] shrink-0 whitespace-nowrap">JSON API</span>
+<span class="px-1.5 sm:px-2 py-0.5 rounded bg-[#F8F7F4] text-[#525763] font-mono-data text-[10px] sm:text-mono-data border border-[#E2DDD5] shrink-0">JSON API</span>
 </div>
-<div class="flex flex-wrap items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
-<span class="text-[#7C3AED] flex items-center gap-1 font-medium whitespace-nowrap">
+<div class="flex items-center justify-between gap-1 pt-1.5 font-mono-data text-[10px] sm:text-mono-data text-[#64748B] border-t border-[#F1EFE9]">
+<span class="text-[#7C3AED] flex items-center gap-1 font-medium whitespace-nowrap truncate min-w-0">
 <span class="material-symbols-outlined text-xs">dns</span> Salem Pod #04
 </span>
-<span class="whitespace-nowrap">Updated just now</span>
+<span class="whitespace-nowrap shrink-0 text-right">Updated now</span>
 </div>
-</div>
+</a>
 </div>
 </div>
 <!-- Bottom Floating Telemetry Banner -->
-<div class="mt-3 sm:mt-4 pt-2.5 flex flex-col md:flex-row items-start md:items-center justify-between gap-2 bg-[#FAF9F6] border border-[#EAE6DF] px-2.5 sm:px-4 py-2 rounded-lg text-[10px] sm:text-mono-data font-mono-data w-full">
-<div class="flex flex-wrap items-center gap-1.5 sm:gap-2.5">
+<a href="404.html" class="mt-3 sm:mt-4 flex flex-wrap items-center justify-between gap-2 bg-[#FAF9F6] border border-[#EAE6DF] hover:border-[#7C3AED]/40 hover:bg-purple-50/20 px-2.5 sm:px-4 py-2 rounded-lg text-[10px] sm:text-mono-data font-mono-data w-full transition cursor-pointer group" title="View Live Telemetry Stream">
+<div class="flex items-center gap-1.5 sm:gap-2.5 min-w-0">
 <span class="relative flex h-2 w-2 shrink-0">
 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
 <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
 </span>
 <span class="text-[#0F1117] whitespace-nowrap">Live: <strong class="text-[#7C3AED] font-bold">1.2 GB/s</strong></span>
 <span class="text-[#D6CEC2]">•</span>
-<span class="text-[#525763] truncate">Node: <strong class="text-[#0F1117]">IN-MAA (Salem)</strong></span>
+<span class="text-[#525763] group-hover:text-primary transition truncate">Node: <strong class="text-[#0F1117]">IN-MAA (Salem)</strong></span>
 </div>
-<div class="flex flex-wrap items-center gap-1.5 sm:gap-2 text-[#64748B]">
+<div class="flex items-center gap-1.5 sm:gap-2 text-[#64748B] shrink-0">
 <span class="whitespace-nowrap">Loss: 0.00%</span>
 <span class="text-[#D6CEC2]">•</span>
 <span class="whitespace-nowrap">Uptime: 99.999%</span>
 </div>
-</div>
+</a>
 </div>
 </div>
 </div>
@@ -975,7 +981,7 @@
 </li>
 </ul>
 </div>
-<a class="w-full py-3 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] hover:bg-[#F2EFE9] text-[#0F1117] text-center font-label-md text-label-md font-semibold transition" href="404.html">
+<a class="w-full py-3 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] hover:bg-[#F2EFE9] text-[#0F1117] text-center font-label-md text-label-md font-semibold transition" href="signup.html">
             Create Free Account
           </a>
 </div>
@@ -1014,7 +1020,7 @@
 </li>
 </ul>
 </div>
-<a class="w-full py-3 rounded-lg bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-center font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition" href="404.html">
+<a class="w-full py-3 rounded-lg bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-center font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] transition" href="signup.html">
             Start 14-Day Free Pro Trial
           </a>
 </div>
@@ -1050,7 +1056,7 @@
 </li>
 </ul>
 </div>
-<a class="w-full py-3 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] hover:bg-[#F2EFE9] text-[#0F1117] text-center font-label-md text-label-md font-semibold transition" href="404.html">
+<a class="w-full py-3 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] hover:bg-[#F2EFE9] text-[#0F1117] text-center font-label-md text-label-md font-semibold transition" href="contact.html">
             Contact Sales
           </a>
 </div>
@@ -1127,11 +1133,11 @@
           Join 45,000+ teams who safeguard their intellectual assets with sovereign zero-knowledge architecture.
         </p>
 <div class="flex flex-col sm:flex-row items-center justify-center gap-space-md pt-4">
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#7C3AED] text-white font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] hover:bg-[#6D28D9] hover:shadow-[0_6px_22px_rgba(124,58,237,0.35)] transition-all" href="404.html">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#7C3AED] text-white font-label-md text-label-md font-semibold shadow-[0_4px_14px_rgba(124,58,237,0.25)] hover:bg-[#6D28D9] hover:shadow-[0_6px_22px_rgba(124,58,237,0.35)] transition-all" href="signup.html">
 <span class="">Get Started for Free</span>
 <span class="material-symbols-outlined text-base">arrow_forward</span>
 </a>
-<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] text-[#0F1117] hover:bg-white hover:border-[#7C3AED] font-label-md text-label-md font-semibold transition-all shadow-sm" href="404.html">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-[#FAF9F6] border border-[#E2DDD5] text-[#0F1117] hover:bg-white hover:border-[#7C3AED] font-label-md text-label-md font-semibold transition-all shadow-sm" href="contact.html">
 <span class="material-symbols-outlined text-base text-[#7C3AED]">calendar_month</span>
 <span class="">Schedule Enterprise Demo</span>
 </a>
